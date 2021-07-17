@@ -11,6 +11,8 @@
 ### tar
 *   extract file.tar.xz: `tar -xf <file.tar.xz>`
 
+*  extract file.tar.xz to directry: `tar -xf <file.tar.xz> -C /path/to/directory`
+
 *   compress files: `tar -cfzv files.tar.gz file1 file2 file3 …​`
 
 ### bc (calculator)
