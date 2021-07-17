@@ -55,10 +55,10 @@
 * to enable sudo for user without asking for password, put at this line 
 the end of file `/etc/surdoers`: `username     ALL=(ALL) NOPASSWD:ALL`
 
-*   add group: `groupadd <new_group>`
+* create group: `groupadd <new_group>`
 
-*   add user to group `usermod -a -G <group_name> <username>`
-
+* add user to group `usermod -a -G <group_name> <username>`
+* list groups: `cat /etc/group`
 *   file persmission:
 
 ```
