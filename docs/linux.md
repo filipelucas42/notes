@@ -66,3 +66,9 @@ the end of file `/etc/surdoers`: `username     ALL=(ALL) NOPASSWD:ALL`
 # r for read, w for write, x for execute
 chmod ugo+rwx <foldername>
 ```
+
+## toubleshooting
+
+* socat permission: `setcap 'cap_net_bind_service=+ep' /usr/bin/socat`
+
+
