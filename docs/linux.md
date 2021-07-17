@@ -50,6 +50,9 @@
     `groff -man -t <file> | pstopdf -i -o <file.pdf>`
 
 ## files/user management
+* enale sudo for user without asking for password:
+put at the end of file `/etc/surdoers`: `username     ALL=(ALL) NOPASSWD:ALL`
+
 *   add group: `groupadd <new_group>`
 
 *   add user to group `usermod -a -G <group_name> <username>`
