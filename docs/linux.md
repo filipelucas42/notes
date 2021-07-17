@@ -51,6 +51,7 @@
 
 ## files/user management
 * enale sudo for user without asking for password:
+
 put at the end of file `/etc/surdoers`: `username     ALL=(ALL) NOPASSWD:ALL`
 
 *   add group: `groupadd <new_group>`
