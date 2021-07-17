@@ -1,3 +1,3 @@
 # Vim
 
-start recording: press `q` then any letter and start recording
+start recording: press `q` then any letter to define a register

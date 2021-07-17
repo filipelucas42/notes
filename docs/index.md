@@ -1,17 +1,40 @@
-# Welcome to MkDocs
+# Home
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Linux / Programs:
 
-## Commands
+* [linux](linux.md)
+* [tmux](tmux.md)
+* [vim](vim.md)
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
 
-## Project layout
+## Databases
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+* [postgres](postgres.md)
+* [mysql](mysql.md)
+* [solr](solr.md)
+
+## Programming Languages
+
+* [python](python.md)
+
+## Frameworks
+
+* [django](django.md)
+
+## Cloud 
+
+* [aws](aws.md)
+
+## Tools
+
+* [git](git.md)
+
+## Containers
+
+* [docker](docker.md)
+###
+## Misc
+
+* [misc](misc.md)
+
+
