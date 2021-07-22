@@ -40,5 +40,5 @@
 
 ## Useful links
 
-* google styleguides: `https://google.github.io/styleguide/`
+* [google styleguides](https://google.github.io/styleguide/)
 
