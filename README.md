@@ -38,4 +38,7 @@
 * [misc](docs/misc.md)
 * [youtube-dl](docs/youtube-dl.md)
 
+## Useful links
+
+* google styleguides: `https://google.github.io/styleguide/`
 
