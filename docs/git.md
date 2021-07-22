@@ -1,6 +1,6 @@
 # git
 
-*   List existing remotes:\`git remote -v\`
+*   List existing remotes: `git remote -v`
 
 *   Show remote url: `git remote show <remote_name>`
 
