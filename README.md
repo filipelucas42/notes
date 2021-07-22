@@ -36,5 +36,6 @@
 ## Misc
 
 * [misc](docs/misc.md)
+* [youtube-dl](docs/youtube-dl.md)
 
 
