@@ -16,6 +16,7 @@
 ## Programming Languages
 
 * [python](docs/python.md)
+* [go](docs/go.md)
 
 ## Frameworks
 
