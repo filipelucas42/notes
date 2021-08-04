@@ -12,3 +12,9 @@
 *   kill session: `ctrl + A` then press `:` and type `kill-session`
 
 *   kill window: `ctrl + A` - `&`
+
+* copy:
+    * copy mode: ctrl + b , [
+    * start copying: ctrl + space
+    * copy: ctrl + space or alt + space
+    * paste: ctrl + b, ]
