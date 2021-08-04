@@ -71,4 +71,6 @@ chmod ugo+rwx <foldername>
 
 * socat permission: `setcap 'cap_net_bind_service=+ep' /usr/bin/socat`
 
+## cronjobs
 
+check log: `grep CRON /var/log/syslog`
