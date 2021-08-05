@@ -17,6 +17,7 @@
 
 * [python](docs/python.md)
 * [go](docs/go.md)
+* [javascript](docs/javascript.md)
 
 ## Frameworks
 
