@@ -19,8 +19,15 @@ Run k8s locally with `kind`
 ### basic config
 required yaml fields:
 ```
-apiVersion:
-kind:
+# example
+apiVersion: v1
+kind: POD
 metadata:
-spce:
+    name: myapp-pod
+    labels:
+        app: myapp
+spcec:
+    containers:
+        - name: nginx-container
+          image: nginx
 ```
