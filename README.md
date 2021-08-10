@@ -35,6 +35,7 @@
 ## Containers
 
 * [docker](docs/docker.md)
+* [kubernetes](docs/kubernetes.md)
   
 ## Misc
 
