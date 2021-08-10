@@ -21,7 +21,7 @@ required yaml fields:
 ```
 # example
 apiVersion: v1
-kind: POD
+kind: Pod
 metadata:
     name: myapp-pod
     labels:
