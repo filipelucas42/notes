@@ -6,6 +6,10 @@
 * [tmux](docs/tmux.md)
 * [vim](docs/vim.md)
 
+## Standards
+
+* [web standards](docs/web-standards.md)
+
 
 ## Databases
 
