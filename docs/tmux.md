@@ -9,12 +9,14 @@
 
 *   attach to a specific session: `tmux a -t <session>`
 
-*   kill session: `ctrl + A` then press `:` and type `kill-session`
+*   kill session: `ctrl + B` then press `:` and type `kill-session`
 
-*   kill window: `ctrl + A` - `&`
+*   kill window: `ctrl + B` - `&`
 
 * copy:
     * copy mode: ctrl + b , [
     * start copying: ctrl + space
     * copy: ctrl + space or alt + space
     * paste: ctrl + b, ]
+
+* change default directory: `ctrl + B` `:` and `attach -c desired/directory/path`
