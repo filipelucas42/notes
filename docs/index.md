@@ -4,7 +4,7 @@
 
 * [linux](linux.md)
 * [tmux](tmux.md)
-* [vim](vim.md)
+* [vim](docs/vim.md)
 
 
 ## Databases

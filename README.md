@@ -40,6 +40,7 @@
 
 * [docker](docs/docker.md)
 * [kubernetes](docs/kubernetes.md)
+* [helm](docs/helm.md)
   
 ## Misc
 
