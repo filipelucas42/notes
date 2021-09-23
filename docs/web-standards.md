@@ -1,5 +1,10 @@
 # web standards
 
+## web
+
+* header keys are case insensitive but its recommended to put them as lower
+case
+
 ## google json style guide
 
 reference: https://google.github.io/styleguide/jsoncstyleguide.xml
