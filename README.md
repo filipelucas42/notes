@@ -1,15 +1,17 @@
 # Notes
 
+Make it correct, make it clear, make it concise, make it fast. In that order.
+
 ## Linux / Programs:
 
 * [linux](docs/linux.md)
 * [tmux](docs/tmux.md)
 * [vim](docs/vim.md)
 
-## Standards
+## Standards and Conventions
 
+* [standards and conventions](docs/standards-and-conventions.md)
 * [web standards](docs/web-standards.md)
-
 
 ## Databases
 
