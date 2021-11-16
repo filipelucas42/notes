@@ -1,6 +1,6 @@
 # Postgres
 
-* connect to database: `psql -d default_database -h <host> -U <user>`
+* connect to database: `psql -d <database_name> -h <host> -U <user>`
 
 *   start postgres server: `sudo systemctl start postgres`
 
