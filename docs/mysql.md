@@ -35,3 +35,7 @@
 ## solution to collation error:
 
 `ALTER TABLE parameters_values CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;`
+
+## backup database
+
+`mysqldump <database> > dump.sql`

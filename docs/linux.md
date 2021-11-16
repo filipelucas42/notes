@@ -9,17 +9,18 @@
 *   create link: `ln -s <file> <link>`
 
 ### tar
-*   extract file.tar.xz: `tar -xf <file.tar.xz>`
+* extract file.tar.xz: `tar -xf <file.tar.xz>`
 
-*  extract file.tar.xz to directry: `tar -xf <file.tar.xz> -C /path/to/directory`
+* extract file.tar.xz to directry: `tar -xf <file.tar.xz> -C /path/to/directory`
 
-*   compress files: `tar -cfzv files.tar.gz file1 file2 file3 …​`
+* compress files: `tar cfzv files.tar.gz file1 file2 file3 …​`
 
 ### bc (calculator)
 * define decimal places: `scale=2`
 
 ### ssh
 *   copy public key to server: `ssh-copy-id demo@198.51.100.0`
+* ignore keyprint: `ssh -o <url>`
 
 ### dig
 *   check domain ip: `dig <url> +short`

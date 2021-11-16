@@ -36,3 +36,8 @@ schema.xml structure:
       <copyField>
     </schema>
 ```
+
+* facet example:
+```
+http://127.0.0.1:8983/solr/collection-name/select?facet.field=<field_name>&facet=on&q=*:*
+```
