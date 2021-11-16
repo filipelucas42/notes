@@ -30,3 +30,5 @@ functionName(&p)
 ```
 * for buillt-in types and reference types (map, slices, etc) use always values
 semantics
+
+* cross compile to windows: `GOOS=windows GOARCH=amd64 go build main.go`

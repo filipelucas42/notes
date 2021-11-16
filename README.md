@@ -14,7 +14,8 @@ Make it correct, make it clear, make it concise, make it fast. In that order.
 * [web standards](docs/web-standards.md)
 
 ## Databases
-
+* [sql](docs/sql.md)
+* [database conventions](docs/database-conventions.md)
 * [postgres](docs/postgres.md)
 * [mysql](docs/mysql.md)
 * [solr](docs/solr.md)
