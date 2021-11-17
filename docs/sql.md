@@ -7,3 +7,8 @@ CREATE TABLE table_name (
     value       varchar(255) not null,
 );
 ```
+
+insert:
+```
+INSERT INTO table_name (column1, column2, column3, ...)  gVALUES (value1, value2, value3, ...); 
+```
