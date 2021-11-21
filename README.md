@@ -35,6 +35,9 @@ Make it correct, make it clear, make it concise, make it fast. In that order.
 
 * [aws](docs/aws.md)
 
+## infrastructure as code
+* [terraform](docs/terraform.md)
+
 ## Tools
 
 * [git](docs/git.md)
