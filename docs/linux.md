@@ -75,3 +75,7 @@ chmod ugo+rwx <foldername>
 ## cronjobs
 
 check log: `grep CRON /var/log/syslog`
+
+## misc
+
+http benchmark: `ab -c 100 -n 10000 http://127.0.0.1:8080/api/`
