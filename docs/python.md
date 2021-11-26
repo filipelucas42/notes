@@ -32,4 +32,4 @@
                 line_count += 1
         print(f'Processed {line_count} lines.')
 
-*   http server: `python3 -m http.server`
+
