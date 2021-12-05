@@ -31,5 +31,10 @@
                 print(f'\t{row[0]} works in the {row[1]} department, and was born in {row[2]}.')
                 line_count += 1
         print(f'Processed {line_count} lines.')
-
+        
+* read file:
+```
+with open('readme.txt') as f:
+    lines = f.readlines()
+```
 
