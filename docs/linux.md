@@ -19,8 +19,10 @@
 * define decimal places: `scale=2`
 
 ### ssh
-*   copy public key to server: `ssh-copy-id demo@198.51.100.0`
+* copy public key to server: `ssh-copy-id demo@198.51.100.0`
 * ignore keyprint: `ssh -o <url>`
+* ssh key permissions: `chmod 400 ~/.ssh/key.pem`
+* connect using ssh keypair: `ssh -i key.pem <user>@<hostname>
 
 ### dig
 *   check domain ip: `dig <url> +short`
