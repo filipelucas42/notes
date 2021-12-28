@@ -20,7 +20,7 @@
 
 ### ssh
 * copy public key to server: `ssh-copy-id demo@198.51.100.0`
-* ignore keyprint: `ssh -o <url>`
+* ignore keyprint: `ssh -o "StrictHostKeyChecking=no" <url>`
 * ssh key permissions: `chmod 400 ~/.ssh/key.pem`
 * connect using ssh keypair: `ssh -i key.pem <user>@<hostname>
 
