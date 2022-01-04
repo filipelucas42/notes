@@ -58,4 +58,3 @@ Make it correct, make it clear, make it concise, make it fast. In that order.
 ## Useful links
 
 * [google styleguides](https://google.github.io/styleguide/)
-

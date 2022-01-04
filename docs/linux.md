@@ -8,6 +8,12 @@
 ### ln
 *   create link: `ln -s <file> <link>`
 
+### grep
+* search word inside folder: `grep -rnw '/path/to/somewhere/' -e 'pattern'`
+  * `-r` recursive
+  * `-n` line number
+  * `-w` whole word
+
 ### tar
 * extract file.tar.xz: `tar -xf <file.tar.xz>`
 
@@ -20,9 +26,13 @@
 
 ### ssh
 * copy public key to server: `ssh-copy-id demo@198.51.100.0`
+<<<<<<< HEAD
 * ignore keyprint: `ssh -o "StrictHostKeyChecking=no" <url>`
 * ssh key permissions: `chmod 400 ~/.ssh/key.pem`
 * connect using ssh keypair: `ssh -i key.pem <user>@<hostname>
+=======
+* ignore keyprint: `ssh -o <url>`
+>>>>>>> d186d7e (m)
 
 ### dig
 *   check domain ip: `dig <url> +short`
