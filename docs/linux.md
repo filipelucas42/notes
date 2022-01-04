@@ -27,6 +27,10 @@
 ### dig
 *   check domain ip: `dig <url> +short`
 
+### find
+* find files with extension: `find . -type f -name "*.txt"`
+
+
 ## other commands
 *   Certbot with nginx:
     `sudo certbot --standalone certonly -d example.com --pre-hook "service nginx stop" --post-hook "service nginx start"`
