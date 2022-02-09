@@ -54,6 +54,7 @@ Make it correct, make it clear, make it concise, make it fast. In that order.
 
 * [misc](docs/misc.md)
 * [youtube-dl](docs/youtube-dl.md)
+* [macos](docs/macos.md)
 
 ## Useful links
 
