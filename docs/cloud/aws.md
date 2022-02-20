@@ -32,3 +32,7 @@
 ### s3
 
 * copy local folders to s3 bucket. `aws s3 cp ./<path> s3://<bucket-name> --recursive`
+
+### cloudfront
+
+* invalidate cache: `aws cloudfront create-invalidation --distribution-id <distribution-id> --paths '<path_to_invalidate>'`
