@@ -1,3 +1,5 @@
 site_name: Notes
 site_url: https://example.com/
-theme: readthedocs
+theme:
+  name: material
+use_directory_urls: false
