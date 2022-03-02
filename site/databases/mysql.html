@@ -8,19 +8,21 @@
       
       
       
-      <link rel="icon" href="/assets/images/favicon.png">
+        <link rel="canonical" href="https://example.com/databases/mysql.html">
+      
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>Notes</title>
+        <title>mysql - Notes</title>
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e8d9bf0c.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.e8d9bf0c.min.css">
       
         
-        <link rel="stylesheet" href="/assets/stylesheets/palette.e6a45f82.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.e6a45f82.min.css">
         
       
     
@@ -34,7 +36,7 @@
       
     
     
-    <script>__md_scope=new URL("/",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -57,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#mysql" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -67,7 +74,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="/index.html" title="Notes" class="md-header__button md-logo" aria-label="Notes" data-md-component="logo">
+    <a href="../index.html" title="Notes" class="md-header__button md-logo" aria-label="Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -86,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              
+              mysql
             
           </span>
         </div>
@@ -153,7 +160,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="/index.html" title="Notes" class="md-nav__button md-logo" aria-label="Notes" data-md-component="logo">
+    <a href="../index.html" title="Notes" class="md-nav__button md-logo" aria-label="Notes" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54z"/></svg>
@@ -172,7 +179,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/index.html" class="md-nav__link">
+      <a href="../index.html" class="md-nav__link">
         Home
       </a>
     </li>
@@ -187,7 +194,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/database-conventions.html" class="md-nav__link">
+      <a href="../database-conventions.html" class="md-nav__link">
         database conventions
       </a>
     </li>
@@ -202,7 +209,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/standards-and-conventions.html" class="md-nav__link">
+      <a href="../standards-and-conventions.html" class="md-nav__link">
         standards and conventions
       </a>
     </li>
@@ -243,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cloud/aws.html" class="md-nav__link">
+      <a href="../cloud/aws.html" class="md-nav__link">
         AWS
       </a>
     </li>
@@ -257,7 +264,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/cloud/terraform.html" class="md-nav__link">
+      <a href="../cloud/terraform.html" class="md-nav__link">
         terraform
       </a>
     </li>
@@ -305,7 +312,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/common-tools-and-programs/git.html" class="md-nav__link">
+      <a href="../common-tools-and-programs/git.html" class="md-nav__link">
         git
       </a>
     </li>
@@ -319,7 +326,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/common-tools-and-programs/nginx.html" class="md-nav__link">
+      <a href="../common-tools-and-programs/nginx.html" class="md-nav__link">
         nginx
       </a>
     </li>
@@ -333,7 +340,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/common-tools-and-programs/openssl.html" class="md-nav__link">
+      <a href="../common-tools-and-programs/openssl.html" class="md-nav__link">
         OpenSSL
       </a>
     </li>
@@ -347,7 +354,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/common-tools-and-programs/plant-uml.html" class="md-nav__link">
+      <a href="../common-tools-and-programs/plant-uml.html" class="md-nav__link">
         plant uml
       </a>
     </li>
@@ -361,7 +368,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/common-tools-and-programs/youtube-dl.html" class="md-nav__link">
+      <a href="../common-tools-and-programs/youtube-dl.html" class="md-nav__link">
         youtube-dl
       </a>
     </li>
@@ -381,12 +388,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -407,11 +416,115 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="/databases/mysql.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          mysql
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="mysql.html" class="md-nav__link md-nav__link--active">
         mysql
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-databases" class="md-nav__link">
+    list databases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-users" class="md-nav__link">
+    list users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-user" class="md-nav__link">
+    create user
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database" class="md-nav__link">
+    create database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant-all-privileges" class="md-nav__link">
+    grant all privileges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flush-privileges" class="md-nav__link">
+    flush privileges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-password-to-authenticate" class="md-nav__link">
+    use password to authenticate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-grants" class="md-nav__link">
+    show grants
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-to-collation-error" class="md-nav__link">
+    solution to collation error:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-database" class="md-nav__link">
+    backup database
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -423,7 +536,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/databases/postgres.html" class="md-nav__link">
+      <a href="postgres.html" class="md-nav__link">
         Postgres
       </a>
     </li>
@@ -437,7 +550,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/databases/sql.html" class="md-nav__link">
+      <a href="sql.html" class="md-nav__link">
         sql
       </a>
     </li>
@@ -477,7 +590,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/databases/solr/solr.html" class="md-nav__link">
+      <a href="solr/solr.html" class="md-nav__link">
         Solr
       </a>
     </li>
@@ -491,7 +604,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/databases/solr/user-experience-features.html" class="md-nav__link">
+      <a href="solr/user-experience-features.html" class="md-nav__link">
         User experience features
       </a>
     </li>
@@ -546,7 +659,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/hugo/hugo.html" class="md-nav__link">
+      <a href="../hugo/hugo.html" class="md-nav__link">
         Hugo
       </a>
     </li>
@@ -594,7 +707,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/linux/certbot.html" class="md-nav__link">
+      <a href="../linux/certbot.html" class="md-nav__link">
         certbot
       </a>
     </li>
@@ -608,7 +721,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/linux/linux.html" class="md-nav__link">
+      <a href="../linux/linux.html" class="md-nav__link">
         linux
       </a>
     </li>
@@ -622,7 +735,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/linux/tmux.html" class="md-nav__link">
+      <a href="../linux/tmux.html" class="md-nav__link">
         Tmux
       </a>
     </li>
@@ -636,7 +749,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/linux/vim.html" class="md-nav__link">
+      <a href="../linux/vim.html" class="md-nav__link">
         Vim
       </a>
     </li>
@@ -684,7 +797,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/macos.html" class="md-nav__link">
+      <a href="../misc/macos.html" class="md-nav__link">
         macos
       </a>
     </li>
@@ -698,7 +811,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/misc/misc.html" class="md-nav__link">
+      <a href="../misc/misc.html" class="md-nav__link">
         Misc
       </a>
     </li>
@@ -746,7 +859,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/flutter.html" class="md-nav__link">
+      <a href="../programming_languages/flutter.html" class="md-nav__link">
         flutter
       </a>
     </li>
@@ -760,7 +873,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/go.html" class="md-nav__link">
+      <a href="../programming_languages/go.html" class="md-nav__link">
         Go
       </a>
     </li>
@@ -774,7 +887,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/java.html" class="md-nav__link">
+      <a href="../programming_languages/java.html" class="md-nav__link">
         java
       </a>
     </li>
@@ -788,7 +901,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/javascript.html" class="md-nav__link">
+      <a href="../programming_languages/javascript.html" class="md-nav__link">
         javascript
       </a>
     </li>
@@ -802,7 +915,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/php.html" class="md-nav__link">
+      <a href="../programming_languages/php.html" class="md-nav__link">
         PHP
       </a>
     </li>
@@ -842,7 +955,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/python/django.html" class="md-nav__link">
+      <a href="../programming_languages/python/django.html" class="md-nav__link">
         Django
       </a>
     </li>
@@ -856,7 +969,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/programming_languages/python/python.html" class="md-nav__link">
+      <a href="../programming_languages/python/python.html" class="md-nav__link">
         python
       </a>
     </li>
@@ -911,7 +1024,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/virtualization/docker.html" class="md-nav__link">
+      <a href="../virtualization/docker.html" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -925,7 +1038,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/virtualization/helm.html" class="md-nav__link">
+      <a href="../virtualization/helm.html" class="md-nav__link">
         helm
       </a>
     </li>
@@ -939,7 +1052,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/virtualization/k8s.html" class="md-nav__link">
+      <a href="../virtualization/k8s.html" class="md-nav__link">
         K8s
       </a>
     </li>
@@ -953,7 +1066,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/virtualization/kind.html" class="md-nav__link">
+      <a href="../virtualization/kind.html" class="md-nav__link">
         kind
       </a>
     </li>
@@ -967,7 +1080,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/virtualization/kubernetes.html" class="md-nav__link">
+      <a href="../virtualization/kubernetes.html" class="md-nav__link">
         kubernetes
       </a>
     </li>
@@ -1015,7 +1128,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/web/authentication.html" class="md-nav__link">
+      <a href="../web/authentication.html" class="md-nav__link">
         Authentication
       </a>
     </li>
@@ -1029,7 +1142,7 @@
   
   
     <li class="md-nav__item">
-      <a href="/web/web-standards.html" class="md-nav__link">
+      <a href="../web/web-standards.html" class="md-nav__link">
         web standards
       </a>
     </li>
@@ -1050,12 +1163,132 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#list-databases" class="md-nav__link">
+    list databases
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-users" class="md-nav__link">
+    list users
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-user" class="md-nav__link">
+    create user
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#create-database" class="md-nav__link">
+    create database
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#grant-all-privileges" class="md-nav__link">
+    grant all privileges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flush-privileges" class="md-nav__link">
+    flush privileges
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#use-password-to-authenticate" class="md-nav__link">
+    use password to authenticate
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#show-grants" class="md-nav__link">
+    show grants
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#solution-to-collation-error" class="md-nav__link">
+    solution to collation error:
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#backup-database" class="md-nav__link">
+    backup database
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
-  <h1>404 - Not found</h1>
+                
 
+
+<h1 id="mysql">mysql</h1>
+<h2 id="list-databases">list databases</h2>
+<p><code>show databases</code></p>
+<h2 id="list-users">list users</h2>
+<p><code>select user from mysql.user</code></p>
+<h2 id="create-user">create user</h2>
+<p><code>CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';</code></p>
+<h2 id="create-database">create database</h2>
+<p><code>CREATE DATABASE database_name;</code></p>
+<h2 id="grant-all-privileges">grant all privileges</h2>
+<p><code>GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost' with grant option;</code></p>
+<h2 id="flush-privileges">flush privileges</h2>
+<p><code>flush privileges</code></p>
+<h2 id="use-password-to-authenticate">use password to authenticate</h2>
+<p><code>ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';</code></p>
+<h2 id="show-grants">show grants</h2>
+<p><code>show grants for 'arctel_prod'@'localhost';</code></p>
+<h2 id="solution-to-collation-error">solution to collation error:</h2>
+<p><code>ALTER TABLE parameters_values CONVERT TO CHARACTER SET utf8 COLLATE utf8_unicode_ci;</code></p>
+<h2 id="backup-database">backup database</h2>
+<p><code>mysqldump &lt;database&gt; &gt; dump.sql</code></p>
+
+              
             </article>
           </div>
         </div>
@@ -1063,6 +1296,41 @@
       </main>
       
         <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        
+        <a href="../common-tools-and-programs/youtube-dl.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: youtube-dl" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              youtube-dl
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="postgres.html" class="md-footer__link md-footer__link--next" aria-label="Next: Postgres" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Postgres
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
@@ -1084,10 +1352,10 @@
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "/", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "/assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "translations": {"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "search": "../assets/javascripts/workers/search.bd0b6b67.min.js"}</script>
     
     
-      <script src="/assets/javascripts/bundle.8aa65030.min.js"></script>
+      <script src="../assets/javascripts/bundle.8aa65030.min.js"></script>
       
     
   </body>
