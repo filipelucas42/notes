@@ -15,3 +15,6 @@
     test3
 {% endif %}
 ```
+
+## deploy
+gunicorn command example: `gunicorn arctel_django.wsgi --preload --workers=4 --timeout 300`
