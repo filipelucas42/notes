@@ -2,192 +2,197 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/index.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/database-conventions.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/standards-and-conventions.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/cloud/aws.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/cloud/terraform.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/common-tools-and-programs/git.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/common-tools-and-programs/nginx.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/common-tools-and-programs/openssl.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/common-tools-and-programs/plant-uml.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/common-tools-and-programs/youtube-dl.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/databases/mysql.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/databases/postgres.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/databases/sql.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/databases/solr/queries.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/databases/solr/solr.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/databases/solr/user-experience-features.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/hugo/hugo.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/linux/certbot.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/linux/linux.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/linux/tmux.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/linux/vim.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://example.com/macos/macos.html</loc>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/misc/macos.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/misc/misc.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/flutter.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/go.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/java.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/javascript.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/php/laravel.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/php/php.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/python/django.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/programming_languages/python/python.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/virtualization/docker.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/virtualization/helm.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/virtualization/k8s.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/virtualization/kind.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/virtualization/kubernetes.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/web/authentication.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/web/web-standards.html</loc>
-         <lastmod>2022-03-05</lastmod>
+         <lastmod>2022-03-10</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>

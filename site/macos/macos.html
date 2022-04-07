@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/virtualization/k8s.html">
+        <link rel="canonical" href="https://example.com/macos/macos.html">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>K8s - Notes</title>
+        <title>macos - Notes</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#macos" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -88,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              K8s
+              macos
             
           </span>
         </div>
@@ -672,12 +677,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_9" type="checkbox" id="__nav_9" checked>
       
       
       
@@ -698,11 +705,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../macos/macos.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="macos.html" class="md-nav__link md-nav__link--active">
         macos
       </a>
+      
     </li>
   
 
@@ -994,14 +1011,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
       
       
       
@@ -1024,7 +1039,7 @@
   
   
     <li class="md-nav__item">
-      <a href="docker.html" class="md-nav__link">
+      <a href="../virtualization/docker.html" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -1038,7 +1053,7 @@
   
   
     <li class="md-nav__item">
-      <a href="helm.html" class="md-nav__link">
+      <a href="../virtualization/helm.html" class="md-nav__link">
         helm
       </a>
     </li>
@@ -1050,19 +1065,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-      
-      <a href="k8s.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../virtualization/k8s.html" class="md-nav__link">
         K8s
       </a>
-      
     </li>
   
 
@@ -1074,7 +1081,7 @@
   
   
     <li class="md-nav__item">
-      <a href="kind.html" class="md-nav__link">
+      <a href="../virtualization/kind.html" class="md-nav__link">
         kind
       </a>
     </li>
@@ -1088,7 +1095,7 @@
   
   
     <li class="md-nav__item">
-      <a href="kubernetes.html" class="md-nav__link">
+      <a href="../virtualization/kubernetes.html" class="md-nav__link">
         kubernetes
       </a>
     </li>
@@ -1171,6 +1178,24 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
@@ -1178,9 +1203,16 @@
                 
 
 
-  <h1>K8s</h1>
+<h1 id="macos">macos</h1>
+<p>install psycopg on m1:</p>
+<pre><code>brew install libpq --build-from-source
+brew install openssl
 
+export LDFLAGS=&quot;-L/opt/homebrew/opt/openssl@1.1/lib -L/opt/homebrew/opt/libpq/lib&quot;
+export CPPFLAGS=&quot;-I/opt/homebrew/opt/openssl@1.1/include -I/opt/homebrew/opt/libpq/include&quot;
 
+pip3 install psycopg2
+</code></pre>
 
               
             </article>
@@ -1194,7 +1226,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="helm.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: helm" rel="prev">
+        <a href="../linux/vim.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Vim" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1203,20 +1235,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              helm
+              Vim
             </div>
           </div>
         </a>
       
       
         
-        <a href="kind.html" class="md-footer__link md-footer__link--next" aria-label="Next: kind" rel="next">
+        <a href="../misc/macos.html" class="md-footer__link md-footer__link--next" aria-label="Next: macos" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              kind
+              macos
             </div>
           </div>
           <div class="md-footer__button md-icon">

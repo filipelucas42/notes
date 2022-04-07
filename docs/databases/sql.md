@@ -19,3 +19,11 @@ UPDATE table_name
 SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
+
+change database name:
+```
+ALTER TABLE table_name
+RENAME TO new_table_name;
+```
+
+drop table: `DROP TABLE table_name;`
