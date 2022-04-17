@@ -15,6 +15,8 @@ Run k8s locally with `kind`
 * get current context: `kubectl conffig current-context`
 * imperative command: `kubectl apply ...`
 * declarative command: `kubectl create ...`
+* delete job: `kubectl delete jobs <job_name>`
+* check pod logs: `kubectl logs -f <pod_name>`
 
 ## configuration
 

@@ -3,6 +3,7 @@
 * change password: `python manage.py changepassword <username>`
 * start developer server: `python manage.py runserver`
 * load data: `python manage.py loaddata fixtures/fixture.json`
+* dump data: `python3 manage.py dumpdata app.Model --indent 4 > data.json`
 
 ## templates
 * if statement:
