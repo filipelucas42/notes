@@ -18,4 +18,5 @@
 ```
 
 ## deploy
-gunicorn command example: `gunicorn arctel_django.wsgi --preload --workers=4 --timeout 300`
+* gunicorn command example: `gunicorn mysite.wsgi --preload --workers=4 --timeout 300`
+* change django settings file: `export DJANGO_SETTINGS_MODULE=mysite.settings`

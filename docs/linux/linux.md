@@ -29,6 +29,8 @@
 * ignore keyprint: `ssh -o "StrictHostKeyChecking=no" <url>`
 * ssh key permissions: `chmod 400 ~/.ssh/key.pem`
 * connect using ssh keypair: `ssh -i key.pem <user>@<hostname>`
+* create ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"`
+* adding ssh key to ssh agent: `eval "$(ssh-agent -s)"`
 
 
 ### dig

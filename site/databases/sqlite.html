@@ -8,14 +8,14 @@
       
       
       
-        <link rel="canonical" href="https://example.com/cloud/terraform.html">
+        <link rel="canonical" href="https://example.com/databases/sqlite.html">
       
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-8.2.1">
     
     
       
-        <title>terraform - Notes</title>
+        <title>sqlite - Notes</title>
       
     
     
@@ -60,7 +60,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#terraform" class="md-skip">
+        <a href="#sqlite" class="md-skip">
           Skip to content
         </a>
       
@@ -93,7 +93,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              terraform
+              sqlite
             
           </span>
         </div>
@@ -222,14 +222,12 @@
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
       
       
       
@@ -252,7 +250,7 @@
   
   
     <li class="md-nav__item">
-      <a href="aws.html" class="md-nav__link">
+      <a href="../cloud/aws.html" class="md-nav__link">
         AWS
       </a>
     </li>
@@ -264,21 +262,11 @@
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="terraform.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../cloud/terraform.html" class="md-nav__link">
         terraform
       </a>
-      
     </li>
   
 
@@ -400,12 +388,14 @@
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_6" type="checkbox" id="__nav_6" checked>
       
       
       
@@ -428,7 +418,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases/mysql.html" class="md-nav__link">
+      <a href="mysql.html" class="md-nav__link">
         mysql
       </a>
     </li>
@@ -442,7 +432,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases/postgres.html" class="md-nav__link">
+      <a href="postgres.html" class="md-nav__link">
         Postgres
       </a>
     </li>
@@ -456,7 +446,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases/sql.html" class="md-nav__link">
+      <a href="sql.html" class="md-nav__link">
         sql
       </a>
     </li>
@@ -468,11 +458,21 @@
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../databases/sqlite.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="sqlite.html" class="md-nav__link md-nav__link--active">
         sqlite
       </a>
+      
     </li>
   
 
@@ -510,7 +510,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases/solr/queries.html" class="md-nav__link">
+      <a href="solr/queries.html" class="md-nav__link">
         solr queries
       </a>
     </li>
@@ -524,7 +524,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases/solr/solr.html" class="md-nav__link">
+      <a href="solr/solr.html" class="md-nav__link">
         Solr
       </a>
     </li>
@@ -538,7 +538,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../databases/solr/user-experience-features.html" class="md-nav__link">
+      <a href="solr/user-experience-features.html" class="md-nav__link">
         User experience features
       </a>
     </li>
@@ -1250,10 +1250,15 @@
                 
 
 
-<h1 id="terraform">terraform</h1>
-<ul>
-<li>import resource: <code>terraform import aws_s3_bucket.my-bucket bucket-created-manually</code></li>
-</ul>
+<h1 id="sqlite">sqlite</h1>
+<p>create table:</p>
+<pre><code>CREATE TABLE child ( 
+    id           INTEGER PRIMARY KEY, 
+    parent_id    INTEGER, 
+    description  TEXT,
+    FOREIGN KEY (parent_id) REFERENCES parent(id)
+);
+</code></pre>
 
               
             </article>
@@ -1267,7 +1272,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="aws.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: AWS" rel="prev">
+        <a href="sql.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: sql" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
           </div>
@@ -1276,20 +1281,20 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              AWS
+              sql
             </div>
           </div>
         </a>
       
       
         
-        <a href="../common-tools-and-programs/git.html" class="md-footer__link md-footer__link--next" aria-label="Next: git" rel="next">
+        <a href="solr/queries.html" class="md-footer__link md-footer__link--next" aria-label="Next: solr queries" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              git
+              solr queries
             </div>
           </div>
           <div class="md-footer__button md-icon">
