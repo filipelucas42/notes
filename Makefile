@@ -10,3 +10,8 @@ invalidate-cache:
 	aws cloudfront create-invalidation --distribution-id EJU9GM7ZEVU6P --paths '/*' --profile $(aws_profile)
 
 deploy: build s3 invalidate-cache
+
+commit:
+	git add .
+	git commit -mm
+	git push
