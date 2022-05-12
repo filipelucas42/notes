@@ -1,4 +1,3 @@
 # solr queries
 
-*  show score: `fl=*, score`
-* delete all documents: `<delete><query>*:*</query></delete>`
+* show score: `fl=*, score`

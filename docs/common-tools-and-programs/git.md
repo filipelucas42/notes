@@ -24,3 +24,6 @@
 
 *   ammend last commit message:
     `git commit --amend -m"<new commit message>"`
+
+* check git submodules status: `git submodule status --recursive`
+* delete remote branch: `git push <remote_name> --delete <remote_branch>`

@@ -7,8 +7,8 @@ create fields in schema:
 add copy field:
 `curl -X POST -H 'Content-type:application/json' --data-binary '{"add-copy-field" : {"source":"*","dest":"text"}}' http://localhost:8983/solr/films/schema`
 
-delete all xml: `<delete><query>*:*</query></delete>`
-
+* delete all xml: `<delete><query>*:*</query></delete>`
+* commit - xml: `<commit></commit>`
 solr directories:
 ```
     <solr-home-directory>/
