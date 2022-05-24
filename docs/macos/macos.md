@@ -10,3 +10,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/openssl@1.1/include -I/opt/homebrew/opt/lib
 
 pip3 install psycopg2
 ```
+
+* change php versions:
+```
+brew unlink php@7.4
+brew link php@5.6 --force
+```

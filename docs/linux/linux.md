@@ -1,5 +1,28 @@
 # linux
 
+## file system
+* /bin: executable programs (home of core utils programas), usually symbolic linked with `/usr/bin`
+* /boot: files needed by bootloader, contains initial rams files and kernel
+* /dev: contains device files
+* /etc: contains configuration files
+* /home: location of individual users home directories
+* /lib: contains shared libraries
+* /lost+found: place where broken files reside after a system crash
+* /media: mount point for removable media
+* /mnt: for mount devices temporarily (sometimes systems mount devices permanently here)
+* /opt: optional packages
+* /proc: contains information abaout every process, each proces has a subdirectory (use `cat /proc/cpuinfo` to see cpu information)
+* /root: home directory for `root` user
+* /run: information about system since boot time like who is logged in and which daemons are running
+* /sbin: contains executable programs, usually symbolic linked with `/usr/bin`
+* /srv: ocasionaly used to serve files with a webserver or files with ftp
+* /sys: information about drivers, devices and kernel features on the system
+* /tmp: directory for temporary files
+* /usr: contains executable programs
+* /var: system specific variable files like logs, temporary message files
+
+
+run `man hier` to see information about file system
 ## common commands
 
 ### ls:
@@ -67,6 +90,12 @@
 *   generate pdf example:
     `groff -man -t <file> | pstopdf -i -o <file.pdf>`
 
+* backup files:
+```
+#!/usr/bin/bash
+source /home/ubuntu/.bash_profile
+backup_date=$(date +%F) && tar cvfz /home/ubuntu/dokuwiki-backups/$(echo $backup_date).tar.gz /var/www/dokuwiki/data /var/www/dokuwiki/conf && aws s3 cp /home/ubuntu/dokuwiki-backups/$(echo $backup_date).tar.gz s3://bucket_name
+```
 ## files/user management
 * to enable sudo for user without asking for password, put at this line 
 the end of file `/etc/surdoers`: `username     ALL=(ALL) NOPASSWD:ALL`
@@ -89,7 +118,16 @@ chmod ugo+rwx <foldername>
 
 ## cronjobs
 
-check log: `grep CRON /var/log/syslog`
+* check log: `grep CRON /var/log/syslog`
+* basic usage: `a b c d e /directory/command output`
+  * a - minute
+  * b - hour
+  * c - day
+  * d - month
+  * e - day of the week
+
+By default, cron sends an email to the owner of the crontab file when it runst, to 
+turn off email output, add the following string, >/dev/null 2>&1, after the timing and command fields.
 
 ## misc
 

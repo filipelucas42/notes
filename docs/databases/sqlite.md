@@ -9,3 +9,5 @@ CREATE TABLE child (
     FOREIGN KEY (parent_id) REFERENCES parent(id)
 );
 ```
+
+* make backup: `sqlite3 /path/to/db '.backup /path/to/backup'`

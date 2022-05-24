@@ -17,6 +17,16 @@
 {% endif %}
 ```
 
+## run external script
+```
+import csv
+import os
+import django
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'project.settings')
+django.setup()
+from project import models
+```
+
 ## deploy
 * gunicorn command example: `gunicorn mysite.wsgi --preload --workers=4 --timeout 300`
 * change django settings file: `export DJANGO_SETTINGS_MODULE=mysite.settings`

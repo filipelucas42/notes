@@ -5,6 +5,8 @@
 *   install requirements.txt:
     `python3 -m pip install -r <path_to_requirements>`
 
+* create `requirements.txt`: `pip freeze > requirements.txt`
+
 *   uninstall packages: `pip uninstall -r requirements.txt -y`
 
 *   iPython:
