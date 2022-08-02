@@ -2,33 +2,47 @@
 
 * connect to database: `psql -d <database_name> -h <host> -U <user>`
 
-*   start postgres server: `sudo systemctl start postgres`
+* start postgres server: `sudo systemctl start postgres`
 
-*   Enter posgres prompt: `sudo -u postgres psql`
+* Enter postgres prompt: `sudo -u postgres psql`
+* Enter postgres prompt in macos: `sudo -u <username> psql postgres`
 
-*   List users: `\du`
+* List users: `\du`
 
-*   Create user: `create user newuser with password 'password';`
+* Create user: `create user newuser with password 'password';`
 
-*   Change user password:
-    `alter user username with password 'new_password';`
+* Change user password:
+  `alter user username with password 'new_password';`
 
-*   Create database: `create database database_name;`
+* Create database: `create database database_name;`
 
-*   Grant all privileges:
-    `grant all privileges on database database_name to user;`
+* Grant all privileges:
+  `grant all privileges on database database_name to user;`
 
-*  grant privileges to schema: `GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA schema_name TO username;`
-*   Check where is hba file: `show hba_file;`
+* grant privileges to schema: `GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA schema_name TO username;`
+* Check where is hba file: `show hba_file;`
 
-*   Connect to database: `\c`
+* Connect to database: `\c`
 
-*   List tables: `\dt`
+* List tables: `\dt`
 
-*   Import SQL file: `psql databasename < data_base_dump`
+* Import SQL file: `psql databasename < data_base_dump`
 
-*   export database: `pg_dump -U username dbname > dbexport.pgsql`
+* export database: `pg_dump -U username dbname > dbexport.pgsql`
 
+* create table example:
+```
+CREATE TABLE accounts (
+	user_id serial PRIMARY KEY,
+	username VARCHAR ( 50 ) UNIQUE NOT NULL,
+	password VARCHAR ( 50 ) NOT NULL,
+	email VARCHAR ( 255 ) UNIQUE NOT NULL,
+	created_on TIMESTAMP NOT NULL,
+        last_login TIMESTAMP 
+);
+```
+
+* rename column: `alter table "user" rename column user_id to id;`
 ## Postgres docker
 
 ### Backup Database

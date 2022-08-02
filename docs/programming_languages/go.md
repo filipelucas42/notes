@@ -33,3 +33,7 @@ semantics
 
 * cross compile to windows: `GOOS=windows GOARCH=amd64 go build main.go`
 * to debug in mac m1 compile with the following envirable variables: `GOOS=darwin, GOARCH=arm64`
+
+## conventions
+
+* package names are **not plural**

@@ -40,3 +40,19 @@ with open('readme.txt') as f:
     lines = f.readlines()
 ```
 
+## json files
+
+* read json file:
+```
+import json
+
+with open('json_data.json') as json_file:
+    data = json.load(json_file)
+    print(data)
+```
+
+* write json file:
+```
+with open('json_data.json', 'w') as outfile:
+    json.dump(json_string, outfile)
+```
