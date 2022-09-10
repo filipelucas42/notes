@@ -54,6 +54,10 @@ run `man hier` to see information about file system
 * connect using ssh keypair: `ssh -i key.pem <user>@<hostname>`
 * create ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"`
 * adding ssh key to ssh agent: `eval "$(ssh-agent -s)"`
+* disable password authentication: adding the following line to file `/etc/ssh/sshd_config`
+```
+PasswordAuthentication no
+```
 
 
 ### dig
