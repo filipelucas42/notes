@@ -27,3 +27,5 @@ RENAME TO new_table_name;
 ```
 
 drop table: `DROP TABLE table_name;`
+
+delete: `DELETE from table_name where <conditions>`

@@ -15,3 +15,8 @@ RestartSec=1
 User=user
 ExecStart=/path/to/bin
 ```
+
+## check service logs
+```
+journalctl -u service_name
+```
