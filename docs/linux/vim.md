@@ -12,3 +12,5 @@
   * replace all: `:%s/foo/bar/g`
   * replace between two lines: `:6,10s/foo/bar/g`
   * add character at end of line: `:%s/$/\*/g`
+
+* disable swap files: `set noswapfile`

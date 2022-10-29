@@ -11,3 +11,4 @@ CREATE TABLE child (
 ```
 
 * make backup: `sqlite3 /path/to/db '.backup /path/to/backup'`
+* add column with reference: `alter table table_name add COLUMN column_name integer REFERENCES other_table(other_table_column_name));`
