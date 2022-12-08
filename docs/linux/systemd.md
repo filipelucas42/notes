@@ -16,7 +16,5 @@ User=user
 ExecStart=/path/to/bin
 ```
 
-## check service logs
-```
-journalctl -u service_name
-```
+* check service logs: `journalctl -u service_name`
+* list services: `systemctl list-units --type=service`
