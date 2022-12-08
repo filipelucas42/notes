@@ -13,6 +13,9 @@
 * remove file from repository `git rm --cached <file_name>`
 * search commits by author `git log --author=<author>`
 * rebase `git rebase -i <hash>` or `git reset <hash> && git add . && git commit -m "message"`
+* push tags: `git push --tags`
+* git fetch all tags: `git fetch --all --tags`
+* push automatically to remote: ` git config --global --add --bool push.autoSetupRemote true`
 
 * ammend last commit message:
     `git commit --amend -m"<new commit message>"`
