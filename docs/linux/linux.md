@@ -74,6 +74,7 @@ PasswordAuthentication no
 ## tips
 * print file strucuture: `find . | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/| - \1/"`
 *   check pid using port: `lsof -i :8983`
+* check path of pid: `pwdx 38555`
 
 *   check open ports: `netstat -plnt`
 
