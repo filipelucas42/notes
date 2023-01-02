@@ -1,5 +1,6 @@
 # Postgres
 
+* install on ubuntu: `sudo apt install postgresql postgresql-contrib`
 * connect to database: `psql -d <database_name> -h <host> -U <user>`
 
 * start postgres server: `sudo systemctl start postgres`

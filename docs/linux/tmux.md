@@ -1,17 +1,18 @@
 # Tmux
 
-*   move-window: `move-window -t <number>`
+* reload config: `source-file ~/.tmuc.conf`
+* move-window: `move-window -t <number>`
 
-*   change default directory in a session:
-    `attach-session -t . -c <dir>`
+* change default directory in a session:
+  `attach-session -t . -c <dir>`
 
-*   attach to last session: `tmux a`
+* attach to last session: `tmux a`
 
-*   attach to a specific session: `tmux a -t <session>`
+* attach to a specific session: `tmux a -t <session>`
 
-*   kill session: `ctrl + B` then press `:` and type `kill-session`
+* kill session: `ctrl + B` then press `:` and type `kill-session`
 
-*   kill window: `ctrl + B` - `&`
+* kill window: `ctrl + B` - `&`
 
 * resize:
 ```
