@@ -4,3 +4,13 @@
 * tag image: `docker tag example_image:latest gauravvv/example_image:latest`
 * push image: `docker push gauravvv/example_image:latest`
 * check docker disk space usage: `docker system df`
+* add user to docker group to remove permission issues: 
+```
+sudo usermod -aG docker $USER
+# login in the group to avoid reboot
+newgrp docker
+```
+* delete images with filter: `docker image prune -a --filter "until=24h"`
+## tips for production
+* for performance use option `--net host`
+
