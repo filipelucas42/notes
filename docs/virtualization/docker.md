@@ -5,12 +5,16 @@
 * push image: `docker push gauravvv/example_image:latest`
 * check docker disk space usage: `docker system df`
 * add user to docker group to remove permission issues: 
+*  stop auto-restart: `docker update --restart=no my-container`
 ```
 sudo usermod -aG docker $USER
 # login in the group to avoid reboot
 newgrp docker
 ```
 * delete images with filter: `docker image prune -a --filter "until=24h"`
+* save image to tar: `docker save -o file.tar image_name`
+* load image from tar: `docker load -i file.tar`
+
 ## tips for production
 * for performance use option `--net host`
 

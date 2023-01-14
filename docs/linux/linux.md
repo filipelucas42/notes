@@ -59,6 +59,21 @@ run `man hier` to see information about file system
 PasswordAuthentication no
 ```
 
+### gpg
+* create key:
+```
+gpg --batch --generate-key <<EOF
+  %no-protection
+  Key-Type: default
+  Subkey-Type: default
+  Name-Real: Foo Bar
+  Expire-Date: 0
+EOF
+```
+
+* list keys: `gpg --list-keys`
+* export public key: `gpg --output public.gpg --armor --export key_id`
+* export private key: `gpg --output private.gpg --armor --export-secret-key key_id`
 
 ### dig
 *   check domain ip: `dig <url> +short`
