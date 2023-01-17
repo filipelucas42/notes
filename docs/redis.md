@@ -7,6 +7,9 @@ Clusters should always have an odd numbers of shards and two replicas per primar
 ## Commands
 
 * check memory stats: `info memory`
+* check replication (see if node is master or slave): `info replication`
+* create slave: `SLAVEOF <ip> <port>`
+* promote slave to master: `SLAVEOF NO ONE`
 * general info (cpu, mode, key number>): `info`
 * list keys: `keys *` (NEVER use this command in production!)
 * set key: `set key_name key_value`
