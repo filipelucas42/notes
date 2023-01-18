@@ -2,8 +2,6 @@
 
 * trivago article about redis usage in production: https://tech.trivago.com/post/learn-redis-the-hard-way/
 
-Clusters should always have an odd numbers of shards and two replicas per primary shard
-
 ## Commands
 
 * check memory stats: `info memory`

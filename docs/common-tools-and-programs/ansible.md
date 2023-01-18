@@ -35,3 +35,17 @@ file: `/etc/ansible/hosts`
       state: present
 ```
 * run command: `ansible servers -a "echo 'test'"`
+* run playbook: `ansible-playbook playbook.yaml`
+* vars example:
+```
+[servers]
+server1.com
+server2.com
+
+[servers:vars]
+ansible_password=****
+ansible_ssh_user=root
+host_key_checking=false
+```
+* disable host key checking: `export ANSIBLE_HOST_KEY_CHECKING=False`
+* include custom inventory file: `ansible -i inventory_file ...`
