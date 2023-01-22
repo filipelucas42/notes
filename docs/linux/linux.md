@@ -148,6 +148,8 @@ chmod ugo+rwx <foldername>
 
 By default, cron sends an email to the owner of the crontab file when it runst, to 
 turn off email output, add the following string, >/dev/null 2>&1, after the timing and command fields.
+* fix mta error: `sudo apt install postfix`
+  * check output message: `tail -f /var/mail/<user>`
 
 ## misc
 
