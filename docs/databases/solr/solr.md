@@ -41,3 +41,16 @@ schema.xml structure:
 ```
 http://127.0.0.1:8983/solr/collection-name/select?facet.field=<field_name>&facet=on&q=*:*
 ```
+
+## solr queries
+
+* show score: `fl=*, score`
+
+## user experience feature
+
+* Pagination and sorting
+* Faceting
+* Autosuggest
+* Spell-checker
+* Hit highlighting
+* Geospatial search

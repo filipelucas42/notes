@@ -49,3 +49,5 @@ host_key_checking=false
 ```
 * disable host key checking: `export ANSIBLE_HOST_KEY_CHECKING=False`
 * include custom inventory file: `ansible -i inventory_file ...`
+* ask ssh password: `ansible-playbook [cmd] --ask-pass`
+* filter tasks by tag: `ansible-playbook [cmd] --tags`

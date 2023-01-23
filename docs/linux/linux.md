@@ -155,3 +155,4 @@ turn off email output, add the following string, >/dev/null 2>&1, after the timi
 
 * http benchmark: `ab -c 100 -n 10000 http://127.0.0.1:8080/api/`
 * check linux distro: `cat /etc/os-release`
+* youtube-dl download mp3 format: `youtube-dl -x --audio-format mp3 <url>`

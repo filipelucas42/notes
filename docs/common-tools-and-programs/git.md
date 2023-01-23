@@ -14,6 +14,7 @@
 * search commits by author `git log --author=<author>`
 * rebase `git rebase -i <hash>` or `git reset <hash> && git add . && git commit -m "message"`
 * push automatically to remote: ` git config --global --add --bool push.autoSetupRemote true`
+* remove file: `git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch <file-to-remove>'`
 
 * ammend last commit message:
     `git commit --amend -m"<new commit message>"`
