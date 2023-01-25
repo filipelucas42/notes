@@ -13,6 +13,16 @@
 * set key: `set key_name key_value`
 * get key contents: `get key_name`
 
+## latency monitoring
+* turn on latency monitoring: `CONFIG SET latency-monitor-threshold <value>`
+* latency commands:
+  * LATENCY LATEST - returns the latest latency samples for all events.
+  * LATENCY HISTORY - returns latency time series for a given event.
+  * LATENCY RESET - resets latency time series data for one or more events.
+  * LATENCY GRAPH - renders an ASCII-art graph of an event's latency samples.
+  * LATENCY DOCTOR - replies with a human-readable latency analysis report.
+
+
 ## Common config 
 ```
 protected-mode no

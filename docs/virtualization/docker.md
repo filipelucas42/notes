@@ -5,7 +5,7 @@
 * push image: `docker push gauravvv/example_image:latest`
 * check docker disk space usage: `docker system df`
 * add user to docker group to remove permission issues: 
-*  stop auto-restart: `docker update --restart=no my-container`
+* stop auto-restart: `docker update --restart=no my-container`
 ```
 sudo usermod -aG docker $USER
 # login in the group to avoid reboot

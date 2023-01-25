@@ -14,3 +14,8 @@
   * add character at end of line: `:%s/$/\*/g`
 
 * disable swap files: `set noswapfile`
+
+## record commands
+* start recording: `q<key>`
+* end recording: `q`
+* play record: `@<key>`
