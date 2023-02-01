@@ -15,6 +15,9 @@ newgrp docker
 * save image to tar: `docker save -o file.tar image_name`
 * load image from tar: `docker load -i file.tar`
 
+## system
+* check total volumes space: `docker system df`
+
 ## tips for production
 * for performance use option `--net host`
 
