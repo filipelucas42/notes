@@ -33,6 +33,23 @@ semantics
 
 * cross compile to windows: `GOOS=windows GOARCH=amd64 go build main.go`
 * to debug in mac m1 compile with the following envirable variables: `GOOS=darwin, GOARCH=arm64`
+* recover go routine after panick:
+```
+func recoverer(maxPanics, id int, f func()) {
+    defer func() {
+        if err := recover(); err != nil {
+            fmt.Println("HERE", id)
+            fmt.Println(err)
+            if maxPanics == 0 {
+                panic("TOO MANY PANICS")
+            } else {
+                go recoverer(maxPanics-1, id, f)
+            }
+        }
+    }()
+    f()
+}
+```
 
 ## conventions
 
