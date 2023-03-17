@@ -17,4 +17,5 @@
 ## docker
 * run php server inside docker:
 	* docker run --rm -it -p 8080:8080 -v $PWD:/code php sh
+	* cd /code
 	* php -S 0.0.0.0:8080

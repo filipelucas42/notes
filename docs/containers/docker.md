@@ -32,4 +32,10 @@ newgrp docker
   * update      Update a context
   * use         Set the current docker context
 
+## dockerfile
+* CMD: specifies the default command to run when a container is started
+  * example: `["python", "app.py"]`
+* ENTRYPOINT: specifies the executable that will be run when the container is started, any arguments passed to `docker run` will be passed as arguments
+to `ENTRYPOINT` executable
+
 
