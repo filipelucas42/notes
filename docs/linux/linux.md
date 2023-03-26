@@ -213,4 +213,5 @@ turn off email output, add the following string, >/dev/null 2>&1, after the timi
 * check linux distro: `cat /etc/os-release`
 * youtube-dl download mp3 format: `youtube-dl -x --audio-format mp3 <url>`
   * alternative to youtube-dl: `yt-dl`
+* sshuttle: `sshuttle --dns -vvr username@sshserver 0/0`
 

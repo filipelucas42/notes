@@ -29,4 +29,5 @@
 
 ## config
 * setup email identity: `git config --global user.email "email@domain.com"` (remove `--global` to set the identity only in this repository)
+* setup name identity: `git config --global user.name "user name"` (remove `--global` to set the identity only in this repository)
 * create remote branch with the same name by default: `git config --global push.default current`
