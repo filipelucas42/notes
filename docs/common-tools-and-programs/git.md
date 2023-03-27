@@ -21,6 +21,7 @@
 
 * check git submodules status: `git submodule status --recursive`
 * delete remote branch: `git push <remote_name> --delete <remote_branch>`
+* use different ssh key: `GIT_SSH_COMMAND="ssh -i ~/.ssh/private_key" git <command>`
 
 ## Tags
 * create tag: `git tag <tag_name>`
