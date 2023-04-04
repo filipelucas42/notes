@@ -54,3 +54,6 @@ func recoverer(maxPanics, id int, f func()) {
 ## conventions
 
 * package names are **not plural**
+
+## articles:
+* https://www.uber.com/en-PT/blog/go-geofence-highest-query-per-second-service/

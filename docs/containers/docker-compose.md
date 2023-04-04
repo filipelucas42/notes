@@ -1,6 +1,7 @@
 # Docker Compose
 
 * enter interactive shell: `docker-compose exec nginx sh`
+* remove volumes: `docker compose down -v`
 * docker compose example:
 ```
 version: "3.9"
