@@ -16,8 +16,8 @@
 * push automatically to remote: ` git config --global --add --bool push.autoSetupRemote true`
 * remove file: `git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch <file-to-remove>'`
 
-* ammend last commit message:
-    `git commit --amend -m"<new commit message>"`
+* ammend last commit message: `git commit --amend -m"<new commit message>"`
+* change last commit author: `git commit --amend --author="Author Name <email@address.com>" --no-edit`
 
 * check git submodules status: `git submodule status --recursive`
 * delete remote branch: `git push <remote_name> --delete <remote_branch>`
