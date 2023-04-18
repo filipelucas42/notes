@@ -214,4 +214,5 @@ turn off email output, add the following string, >/dev/null 2>&1, after the timi
 * youtube-dl download mp3 format: `youtube-dl -x --audio-format mp3 <url>`
   * alternative to youtube-dl: `yt-dl`
 * sshuttle: `sshuttle --dns -vvr username@sshserver 0/0`
+* edit pdf files (cut pages): `pdftk input.pdf cat 2-4 output out1.pdf`
 
