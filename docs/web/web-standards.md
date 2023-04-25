@@ -81,3 +81,6 @@ reference: https://github.com/cloudevents/spec/blob/v1.0.1/spec.md
     "data" : "<much wow=\"xml\"/>"
 }
 ```
+
+## OWASP Guidelines
+https://cheatsheetseries.owasp.org
