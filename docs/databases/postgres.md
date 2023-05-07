@@ -43,6 +43,16 @@ CREATE TABLE accounts (
 );
 ```
 
+* alter table to add on delete cascade:
+```
+ALTER TABLE "Children"
+DROP CONSTRAINT "Children_parentId_fkey",
+ADD CONSTRAINT "Children_parentId_fkey"
+  FOREIGN KEY ("parentId")
+  REFERENCES "Parent"(id)
+  ON DELETE CASCADE;
+```
+
 * rename column: `alter table "user" rename column user_id to id;`
 ## Postgres docker
 
