@@ -14,6 +14,7 @@ newgrp docker
 * delete images with filter: `docker image prune -a --filter "until=24h"`
 * save image to tar: `docker save -o file.tar image_name`
 * load image from tar: `docker load -i file.tar`
+* check images checksum: `docker images --digests`
 
 ## system
 * check total volumes space: `docker system df`

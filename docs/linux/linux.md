@@ -215,4 +215,5 @@ turn off email output, add the following string, >/dev/null 2>&1, after the timi
   * alternative to youtube-dl: `yt-dl`
 * sshuttle: `sshuttle --dns -vvr username@sshserver 0/0`
 * edit pdf files (cut pages): `pdftk input.pdf cat 2-4 output out1.pdf`
+* convert date to epoch: `date -d "05/15/1993 15:21:22" +"%s"`
 
