@@ -51,3 +51,4 @@ host_key_checking=false
 * include custom inventory file: `ansible -i inventory_file ...`
 * ask ssh password: `ansible-playbook [cmd] --ask-pass`
 * filter tasks by tag: `ansible-playbook [cmd] --tags`
+* dry run: add flag `--check`
