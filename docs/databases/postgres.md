@@ -54,6 +54,7 @@ ADD CONSTRAINT "Children_parentId_fkey"
 ```
 
 * rename column: `alter table "user" rename column user_id to id;`
+* delete function: `DROP FUNCTION [ IF EXISTS ] function_name ( [ argument_data_type [, ...] ] );`
 ## Postgres docker
 
 ### Backup Database
