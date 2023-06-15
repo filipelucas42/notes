@@ -55,6 +55,12 @@ ADD CONSTRAINT "Children_parentId_fkey"
 
 * rename column: `alter table "user" rename column user_id to id;`
 * delete function: `DROP FUNCTION [ IF EXISTS ] function_name ( [ argument_data_type [, ...] ] );`
+
+## System administration
+* table `pg_catalog.pg_stat_activity` has the current queries to the database
+* function `pg_catalog.pg_cancel_backend(pid integer)` deletes a query based on it's pid
+
+
 ## Postgres docker
 
 ### Backup Database
