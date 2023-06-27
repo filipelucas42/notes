@@ -55,6 +55,15 @@ ADD CONSTRAINT "Children_parentId_fkey"
 
 * rename column: `alter table "user" rename column user_id to id;`
 * delete function: `DROP FUNCTION [ IF EXISTS ] function_name ( [ argument_data_type [, ...] ] );`
+* add primary key column to existing table
+  * modern versions of postgresql: `ALTER TABLE test1 ADD COLUMN id SERIAL PRIMARY KEY;`
+  * older versions of postgresql:
+```
+ALTER TABLE test1 ADD COLUMN id INTEGER;
+CREATE SEQUENCE test_id_seq OWNED BY test1.id;
+ALTER TABLE test1 ALTER COLUMN id SET DEFAULT nextval('test_id_seq');
+UPDATE test1 SET id = nextval('test_id_seq');
+```
 
 ## System administration
 * table `pg_catalog.pg_stat_activity` has the current queries to the database
@@ -74,7 +83,7 @@ generate sql:
 *   docker exec -t your-db-container pg\_dumpall -c -U your-db-user |
     gzip > ./dump\_$(date +\`\`%Y-%m-%d\_%H\_%M\_%S'').gz
 
-#### Restore Database
+### Restore Database
 
 *   `cat your_dump.sql | docker exec -i your-db-container psql -U your-db-user -d your-db-name` 
 
