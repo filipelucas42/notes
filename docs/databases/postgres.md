@@ -65,6 +65,12 @@ ALTER TABLE test1 ALTER COLUMN id SET DEFAULT nextval('test_id_seq');
 UPDATE test1 SET id = nextval('test_id_seq');
 ```
 
+* add column to existing table:
+```
+ALTER TABLE table_name
+ADD COLUMN column_name data_type;
+```
+
 ## System administration
 * table `pg_catalog.pg_stat_activity` has the current queries to the database
 * function `pg_catalog.pg_cancel_backend(pid integer)` deletes a query based on it's pid
