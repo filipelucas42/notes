@@ -73,6 +73,25 @@ ALTER TABLE table_name
 ADD COLUMN column_name data_type;
 ```
 
+* check triggers:
+``` 
+SELECT 
+   p.proname as function_name, 
+   t.tgname as trigger_name, 
+   t.tgenabled as trigger_enabled, 
+   t.tgisinternal as is_internal_trigger, 
+   c.relname as table_name, 
+   n.nspname as schema_name
+FROM 
+   pg_trigger t
+JOIN 
+   pg_class c ON t.tgrelid = c.oid 
+JOIN 
+   pg_proc p ON t.tgfoid = p.oid 
+JOIN 
+   pg_namespace n ON c.relnamespace = n.oid;
+```
+
 ## System administration
 * table `pg_catalog.pg_stat_activity` has the current queries to the database
 * function `pg_catalog.pg_cancel_backend(pid integer)` deletes a query based on it's pid
