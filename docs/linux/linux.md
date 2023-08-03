@@ -215,5 +215,10 @@ turn off email output, add the following string, >/dev/null 2>&1, after the timi
   * alternative to youtube-dl: `yt-dl`
 * sshuttle: `sshuttle --dns -vvr username@sshserver 0/0`
 * edit pdf files (cut pages): `pdftk input.pdf cat 2-4 output out1.pdf`
+* rotate pdf: `pdftk input.pdf cat 1-endeast output output.pdf`
+This will rotate the entire document (1-end) 180 degrees and save it as output.pdf. Please replace input.pdf with your actual file name and output.pdf with your desired output file name.
+
+Note that in this command, 1-end means all pages from the first to the last. If you wanted to rotate only a specific page or range of pages, you could replace 1-end with the desired page numbers. For example, 1-3down would rotate the first three pages 180 degrees.
+* join multiple pdf files: `pdftk file1.pdf file2.pdf cat output outputfile.pdf`
 * convert date to epoch: `date -d "05/15/1993 15:21:22" +"%s"`
 * send command over ssh
