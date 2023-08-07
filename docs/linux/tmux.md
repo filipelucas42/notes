@@ -13,6 +13,7 @@
 * kill session: `ctrl + B` then press `:` and type `kill-session`
 
 * kill window: `ctrl + B` - `&`
+* kill pane: `ctrl + b` + `x`
 
 * resize:
 ```
