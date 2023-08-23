@@ -36,6 +36,7 @@ run `man hier` to see information about file system
   * `-r` recursive
   * `-n` line number
   * `-w` whole word
+* search multiple strings: `grep -E 'pattern1|pattern2|pattern3' filename`
 
 ### tar
 * extract file.tar.xz: `tar -xf <file.tar.xz>`

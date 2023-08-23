@@ -73,6 +73,40 @@ ALTER TABLE table_name
 ADD COLUMN column_name data_type;
 ```
 
+* function for trigger example:
+```
+CREATE OR REPLACE FUNCTION function_name()
+ RETURNS trigger
+ LANGUAGE plpgsql
+AS $function$
+
+declare
+v_variable bigint;
+begin
+
+IF ( TG_OP = 'DELETE' ) THEN
+  v_variable=OLD.column_name;
+ELSE
+  v_variable=NEW.column_name;
+END IF;
+
+
+perform pg_notify('channel', data)
+from table t
+where t.column_name = v_variable;
+
+RETURN NULL;
+end $function$
+;
+```
+
+* create trigger:
+```
+CREATE TRIGGER trigger_name
+AFTER INSERT OR UPDATE ON tabel_name
+FOR EACH ROW EXECUTE FUNCTION function_name;
+```
+
 * check triggers:
 ``` 
 SELECT 
