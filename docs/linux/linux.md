@@ -83,6 +83,7 @@ EOF
 * find files with extension: `find . -type f -name "*.txt"`
 
 ### date
+* print epoch to date time: `date -u -d @UNIX_TIMESTAMP`
 * `date +FORMAT`
 ```
 FORMAT controls the output.  Interpreted sequences are:
