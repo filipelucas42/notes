@@ -39,4 +39,8 @@ newgrp docker
 * ENTRYPOINT: specifies the executable that will be run when the container is started, any arguments passed to `docker run` will be passed as arguments
 to `ENTRYPOINT` executable
 
+## logs
+* logs are stored here: `/var/lib/docker/containers/CONTAINER_ID/CONTAINER_ID-json.log`
+* control log size and number of files: `docker run --log-opt max-size=10m --log-opt max-file=3 my_image`
+
 
