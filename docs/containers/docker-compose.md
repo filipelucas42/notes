@@ -24,3 +24,24 @@ services:
     ports:
       - "6379:6379"
 ```
+* connect to an existing network:
+```
+services:
+  # ...
+networks:
+  network1:
+    name: my-pre-existing-network
+    external: true
+```
+* create a network with a defined subnet:
+```
+version: "3.3"
+services:
+  # ...
+networks:
+  network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+```
