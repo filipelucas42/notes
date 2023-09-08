@@ -48,6 +48,9 @@ run `man hier` to see information about file system
 ### bc (calculator)
 * define decimal places: `scale=2`
 
+## telnet
+* make tcp connection: `telnet [hostname/IP] [port]`
+
 ### ssh
 * copy public key to server: `ssh-copy-id demo@198.51.100.0`
 * ignore keyprint: `ssh -o "StrictHostKeyChecking=no" <url>`
@@ -56,7 +59,7 @@ run `man hier` to see information about file system
 * create ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"`
 * adding ssh key to ssh agent: `eval "$(ssh-agent -s)"`
 * disable password authentication: adding the following line to file `/etc/ssh/sshd_config`
-```
+* extract public key from private key: `ssh-keygen -y -f /home/filipe/private.key > /home/filipe/public.key`
 PasswordAuthentication no
 ```
 
