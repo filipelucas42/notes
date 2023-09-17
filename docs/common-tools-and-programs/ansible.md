@@ -52,3 +52,4 @@ host_key_checking=false
 * ask ssh password: `ansible-playbook [cmd] --ask-pass`
 * filter tasks by tag: `ansible-playbook [cmd] --tags`
 * dry run: add flag `--check`
+* run tasks filtered by tags: `ansible-playbook your-playbook.yml --tags your_tag`
