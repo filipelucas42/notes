@@ -153,3 +153,8 @@ generate sql:
     gunzip your_dump.sql.gz | docker exec -i your-db-container
     psql -U your-db-user -d y`ur-db-name
     ```
+
+
+## Misc
+
+* migrate from sqlite to postgres: `pgloader sqlite://path_to_database.sqlite postgresql://username:password@localhost:5432/database_name`
