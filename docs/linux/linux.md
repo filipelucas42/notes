@@ -59,9 +59,10 @@ run `man hier` to see information about file system
 * create ssh key: `ssh-keygen -t ed25519 -C "your_email@example.com"`
 * adding ssh key to ssh agent: `eval "$(ssh-agent -s)"`
 * disable password authentication: adding the following line to file `/etc/ssh/sshd_config`
-* extract public key from private key: `ssh-keygen -y -f /home/filipe/private.key > /home/filipe/public.key`
+```
 PasswordAuthentication no
 ```
+* extract public key from private key: `ssh-keygen -y -f /home/filipe/private.key > /home/filipe/public.key`
 
 ### gpg
 * create key:
@@ -88,9 +89,9 @@ EOF
 ### date
 * print epoch to date time: `date -u -d @UNIX_TIMESTAMP`
 * `date +FORMAT`
+
 ```
 FORMAT controls the output.  Interpreted sequences are:
-
 %%     a literal %
 %a     locale's abbreviated weekday name (e.g., Sun)
 %A     locale's full weekday name (e.g., Sunday)
