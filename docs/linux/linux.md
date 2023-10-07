@@ -143,7 +143,8 @@ FORMAT controls the output.  Interpreted sequences are:
       -04, +05:30)
 %Z     alphabetic time zone abbreviation (e.g., EDT)
 ```
-
+### nc
+* check udp port connection: `nc -z -v -u 192.168.201.192 12201`
 ## other commands
 *   Certbot with nginx:
     `sudo certbot --standalone certonly -d example.com --pre-hook "service nginx stop" --post-hook "service nginx start"`
@@ -228,3 +229,4 @@ Note that in this command, 1-end means all pages from the first to the last. If 
 * join multiple pdf files: `pdftk file1.pdf file2.pdf cat output outputfile.pdf`
 * convert date to epoch: `date -d "05/15/1993 15:21:22" +"%s"`
 * send command over ssh
+
