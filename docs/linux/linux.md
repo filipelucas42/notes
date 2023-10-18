@@ -33,10 +33,11 @@ run `man hier` to see information about file system
 
 ### grep
 * search word inside folder: `grep -rnw '/path/to/somewhere/' -e 'pattern'`
-  * `-r` recursive
-  * `-n` line number
-  * `-w` whole word
+    * `-r` recursive
+    * `-n` line number
+    * `-w` whole word
 * search multiple strings: `grep -E 'pattern1|pattern2|pattern3' filename`
+* revert the matching: `grep -v 'name*'` (get all that do not start by `name` )
 
 ### tar
 * extract file.tar.xz: `tar -xf <file.tar.xz>`
@@ -203,16 +204,16 @@ chmod ugo+rwx <foldername>
 
 * check log: `grep CRON /var/log/syslog`
 * basic usage: `a b c d e /directory/command output`
-  * a - minute
-  * b - hour
-  * c - day
-  * d - month
-  * e - day of the week
+    * a - minute
+    * b - hour
+    * c - day
+    * d - month
+    * e - day of the week
 
 By default, cron sends an email to the owner of the crontab file when it runst, to 
 turn off email output, add the following string, >/dev/null 2>&1, after the timing and command fields.
 * fix mta error: `sudo apt install postfix`
-  * check output message: `tail -f /var/mail/<user>`
+    * check output message: `tail -f /var/mail/<user>`
 
 ## misc
 
