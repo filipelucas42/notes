@@ -13,5 +13,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Run action
-        uses: ./.github/workflows/action
+        uses: ./.github/workflows
       - run: echo "test"
