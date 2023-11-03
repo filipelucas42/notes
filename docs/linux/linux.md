@@ -146,6 +146,55 @@ FORMAT controls the output.  Interpreted sequences are:
 ```
 ### nc
 * check udp port connection: `nc -z -v -u 192.168.201.192 12201`
+
+### chmod
+There are two main ways to specify permissions with chmod: symbolic mode and absolute mode.
+
+There are three categories of users:
+* Owner: The user who owns the file or directory.
+* Group: The group associated with the file or directory.
+* Others: Any other users not belonging to the owner or group categories.
+
+#### Symbolic Mode
+
+In symbolic mode, you can use symbolic notations to change permissions:
+
+* u: Owner
+* g: Group
+* o: Others
+* a: All (owner, group, others)
+
+Operators:
+
+* +: Adds a permission
+* -: Removes a permission
+* =: Sets a permission
+
+Examples:
+* chmod u+x filename: Grants execute permission to the owner.
+* chmod g-w filename: Removes write permission from the group.
+* chmod o=r filename: Sets others' permission to read-only.
+* chmod a+r filename: Grants read permission to everyone.
+
+####  Absolute Mode:
+
+In this mode, you use numeric values to set permissions:
+
+* 4: Read (r)
+* 2: Write (w)
+* 1: Execute (x)
+
+Permissions are then a sum of these values:
+
+* 7 = 4 + 2 + 1 (read, write, and execute)
+* 5 = 4 + 1 (read and execute)
+* 6 = 4 + 2 (read and write)
+
+Examples:
+
+* chmod 755 filename: Sets permissions to rwxr-xr-x (owner has full rights, group and others can read and execute).
+* chmod 644 filename: Sets permissions to rw-r--r-- (owner can read and write, group and others can only read).
+
 ## other commands
 *   Certbot with nginx:
     `sudo certbot --standalone certonly -d example.com --pre-hook "service nginx stop" --post-hook "service nginx start"`
