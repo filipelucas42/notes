@@ -1,5 +1,0 @@
-name: 'MkDocs'
-description: ''
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
