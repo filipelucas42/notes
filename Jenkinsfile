@@ -19,7 +19,7 @@ pipeline {
             agent {
                 docker {
                     image 'amazon/aws-cli'
-                    args '-v ${PWD}:/docs -w /docs --env AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --env AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} --entrypoint='''
+                    args "-v ${PWD}:/docs -w /docs --env AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --env AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} --entrypoint=''"
                 }
             }
             steps {
@@ -30,7 +30,7 @@ pipeline {
             agent {
                 docker {
                     image 'amazon/aws-cli'
-                    args '--env AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --env AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} --entrypoint='''
+                    args "--env AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID} --env AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY} --entrypoint=''"
                 }
             }
             steps {
