@@ -7,8 +7,9 @@ pipeline {
     stages {
         stage('Build') {
             agent { 
-                dockerfile true
-                args '-v ${PWD}:/docs -w /docs'
+                dockerfile {
+                    args '-v ${PWD}:/docs -w /docs'
+                }
             }
             steps {
                 sh "python3 -m mkdocs build"
