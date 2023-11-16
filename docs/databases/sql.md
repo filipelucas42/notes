@@ -8,6 +8,14 @@ CREATE TABLE table_name (
 );
 ```
 
+create table if not exists:
+```
+CREATE TABLE IF NOT EXISTS table_name (
+    id          bigint not null primary key,
+    value       varchar(255) not null,
+);
+```
+
 insert:
 ```
 INSERT INTO table_name (column1, column2, column3, ...) VALUES (value1, value2, value3, ...); 
