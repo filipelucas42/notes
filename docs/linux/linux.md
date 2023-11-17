@@ -21,6 +21,37 @@
 * /usr: contains executable programs
 * /var: system specific variable files like logs, temporary message files
 
+## where to put binaries
+
+* **`/bin` and `/sbin`**
+  - Essential binaries for booting and running the system.
+  - `/bin` contains basic user commands.
+  - `/sbin` contains system administration commands.
+  - Available to all users.
+
+* **`/usr/bin` and `/usr/sbin`**
+  - Non-essential binaries.
+  - `/usr/bin` contains standard user commands.
+  - `/usr/sbin` for non-essential system administration binaries.
+  - Generally available to all users.
+
+* **`/usr/local/bin` and `/usr/local/sbin`**
+  - For software and scripts installed locally.
+  - `/usr/local/bin` for user-accessible programs.
+  - `/usr/local/sbin` for system administration programs.
+
+* **`/opt`**
+  - Used for some third-party applications.
+  - Common for commercial software and large packages.
+  - Keeps files in a separate directory.
+
+* **`~/.local/bin`**
+  - For a single user's personal executables.
+  - Specific to the user's environment.
+  - Does not affect other users on the system.
+
+Ensure binaries have correct permissions (usually executable) and choose directories aligning with the software's scope (system-wide vs user-specific, essential vs non-essential).
+
 
 run `man hier` to see information about file system
 ## common commands
