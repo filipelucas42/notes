@@ -1,4 +1,9 @@
 # linux
+## terminal shortcuts
+* move cursor to the beginning of the line `CTRL+A`
+* move cursor to the end of the line `CTRL+E`
+* move cursor forward one word `ALT+F`
+* move cursor backward one word `ALT+B`
 
 ## file system
 * /bin: executable programs (home of core utils programas), usually symbolic linked with `/usr/bin`
