@@ -85,7 +85,7 @@ run `man hier` to see information about file system
 ### bc (calculator)
 * define decimal places: `scale=2`
 
-## telnet
+### telnet
 * make tcp connection: `telnet [hostname/IP] [port]`
 
 ### ssh
