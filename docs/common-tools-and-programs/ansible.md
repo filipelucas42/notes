@@ -53,3 +53,9 @@ host_key_checking=false
 * filter tasks by tag: `ansible-playbook [cmd] --tags`
 * dry run: add flag `--check`
 * run tasks filtered by tags: `ansible-playbook your-playbook.yml --tags your_tag`
+
+## vault
+
+* encrypt file: `ansible-vault encrypt foo.yml bar.yml baz.yml`
+* decrypt files: `ansible-vault decrypt foo.yml bar.yml baz.yml`
+* use password file: `ansible-playbook --vault-password-file /path/to/my/vault-password-file site.yml`
