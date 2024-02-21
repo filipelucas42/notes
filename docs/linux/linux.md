@@ -314,5 +314,10 @@ This will rotate the entire document (1-end) 180 degrees and save it as output.p
 Note that in this command, 1-end means all pages from the first to the last. If you wanted to rotate only a specific page or range of pages, you could replace 1-end with the desired page numbers. For example, 1-3down would rotate the first three pages 180 degrees.
 * join multiple pdf files: `pdftk file1.pdf file2.pdf cat output outputfile.pdf`
 * convert date to epoch: `date -d "05/15/1993 15:21:22" +"%s"`
-* send command over ssh
+* send command over ssh: `ssh user@host command`
+* fix screen freeze problem:
+  * add options to file `/etc/default/grub`: `GRUB_CMDLINE_LINUX_DEFAULT="i915.enable_dc=0 i915.enable_rc6=0 i915.enable_p    sr=0 i915.dmc_firmware_path= quiet splash"`
+  * update grub: `sudo update-grub`
+
+
 
