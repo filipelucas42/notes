@@ -15,6 +15,7 @@
   * add character at end of line: `:%s/$/\*/g`
 
 * disable swap files: `set noswapfile`
+* select pasted text: `gv`
 
 ## record commands
 * start recording: `q<key>`

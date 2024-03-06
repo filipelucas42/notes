@@ -87,6 +87,7 @@ run `man hier` to see information about file system
 
 ### telnet
 * make tcp connection: `telnet [hostname/IP] [port]`
+* quit: press `Ctrl + ]` and type `quit`
 
 ### ssh
 * copy public key to server: `ssh-copy-id demo@198.51.100.0`
