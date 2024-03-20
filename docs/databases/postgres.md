@@ -125,6 +125,14 @@ JOIN
 JOIN 
    pg_namespace n ON c.relnamespace = n.oid;
 ```
+## Sequence
+```
+CREATE SEQUENCE schema.id_seq;
+
+ALTER TABLE schema.table 
+ALTER COLUMN column SET DEFAULT nextval('schema.id_seq');
+```
+* restart sequence: `ALTER SEQUENCE sequence_name RESTART WITH desired_value;`
 
 ## System administration
 * table `pg_catalog.pg_stat_activity` has the current queries to the database
