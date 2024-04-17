@@ -124,6 +124,9 @@ EOF
 ### find
 * find files with extension: `find . -type f -name "*.txt"`
 
+### truncate
+* truncate file: `sudo truncate -s 0 file`
+
 ### date
 * print epoch to date time: `date -u -d @UNIX_TIMESTAMP`
 * `date +FORMAT`
