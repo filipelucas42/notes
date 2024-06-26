@@ -16,6 +16,8 @@
 
 * disable swap files: `set noswapfile`
 * select pasted text: `gv`
+* full page down: Ctrl + f
+* half page down: Ctrl + d
 
 ## record commands
 * start recording: `q<key>`
