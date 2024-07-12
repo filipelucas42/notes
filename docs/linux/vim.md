@@ -18,6 +18,8 @@
 * select pasted text: `gv`
 * full page down: Ctrl + f
 * half page down: Ctrl + d
+* full page up: Ctrl + b
+* half page up: Ctrl + u
 
 ## record commands
 * start recording: `q<key>`
