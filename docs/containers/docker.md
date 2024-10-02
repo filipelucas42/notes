@@ -22,6 +22,10 @@ newgrp docker
 ## tips for production
 * for performance use option `--net host`
 
+## save docker image to file
+- save docker image to file: `docker save -o myimage.tar myimage:tag`
+- load docker image: `docker load -i myimage.tar`
+
 ## context
 * docker context:
   * create      Create a context
