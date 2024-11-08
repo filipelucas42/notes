@@ -57,3 +57,10 @@ func recoverer(maxPanics, id int, f func()) {
 
 ## articles:
 * https://www.uber.com/en-PT/blog/go-geofence-highest-query-per-second-service/
+
+## multiline strings
+```
+    multilineString := `This is a
+multiline string
+in Go!`
+```
