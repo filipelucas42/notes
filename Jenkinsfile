@@ -14,6 +14,7 @@ pipeline {
                 }
             }
             steps {
+                sh "echo test"
                 sh "python3 -m mkdocs build"
             }
         }
