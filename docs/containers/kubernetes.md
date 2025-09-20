@@ -77,3 +77,26 @@ spec:
             app: myapp
 
 ```
+
+## Use pod to access pvc
+- Create temporary pod:
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: pvc-access
+  namespace: <your-namespace> # Replace with your namespace
+spec:
+  containers:
+    - name: pvc-access-container
+      image: busybox
+      command: ["/bin/sh", "-c", "sleep infinity"]
+      volumeMounts:
+        - name: pvc-storage
+          mountPath: /mnt/pvc
+  volumes:
+    - name: pvc-storage
+      persistentVolumeClaim:
+        claimName: <your-pvc-name> # Replace with your PVC name
+```
+- kubectl cp <local-file-path> <namespace>/pvc-access:/mnt/pvc
