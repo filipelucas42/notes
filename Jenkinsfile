@@ -1,5 +1,10 @@
 pipeline {
-    agent none 
+    agent {
+        docker {
+            image 'docker:24.0.5-dind'
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        } 
+    }
     environment {
         AWS_ACCESS_KEY_ID = credentials("AWS_ACCESS_KEY_ID")
         AWS_SECRET_ACCESS_KEY = credentials("AWS_SECRET_ACCESS_KEY")
