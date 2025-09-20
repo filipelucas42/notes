@@ -1,18 +1,21 @@
 pipeline {
-    agent {
-        docker {
-            image 'docker:24.0.5-dind'
-            args '-v /var/run/docker.sock:/var/run/docker.sock'
-        } 
-    }
+    agent none
     environment {
         AWS_ACCESS_KEY_ID = credentials("AWS_ACCESS_KEY_ID")
         AWS_SECRET_ACCESS_KEY = credentials("AWS_SECRET_ACCESS_KEY")
     }
+    tools { dockerTool 'my docker' }
     stages {
         stage('Initialize'){
-            def dockerHome = tool 'my docker'
-            env.PATH = "${dockerHome}/bin:${env.PATH}"
+            steps {
+                script {
+                    sh '''
+                    echo "PATH=$PATH"
+                    which docker || true
+                    docker version || true
+                    '''
+                }
+            }
         }
 
         stage('Build') {
