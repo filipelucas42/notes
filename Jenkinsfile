@@ -6,17 +6,6 @@ pipeline {
     }
     tools { docker 'latest' }
     stages {
-        stage('Initialize'){
-            steps {
-                script {
-                    sh '''
-                    echo "PATH=$PATH"
-                    which docker || true
-                    docker version || true
-                    '''
-                }
-            }
-        }
 
         stage('Build') {
             agent { 
