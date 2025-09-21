@@ -25,8 +25,6 @@ jobs:
   s3_sync:
     needs: build
     runs-on: ubuntu-latest
-    container:
-      image: amazon/aws-cli:2.17.59
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -37,17 +35,17 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
+      - uses: aws-actions/setup-aws-cli@v2
       - run: aws s3 sync ./site s3://filipelucas-notes --delete
 
   invalidate_cache:
     needs: s3_sync
     runs-on: ubuntu-latest
-    container:
-      image: amazon/aws-cli:2.17.59
     steps:
       - uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: eu-west-1
+      - uses: aws-actions/setup-aws-cli@v2
       - run: aws cloudfront create-invalidation --distribution-id EJU9GM7ZEVU6P --paths '/*'
