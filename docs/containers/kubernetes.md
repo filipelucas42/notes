@@ -20,6 +20,13 @@ Run k8s locally with `kind`
 * get deployments:  `kubectl get deploy`
 * deletye deploy: `kubectl delete deploy`
 
+## Commands
+### Define default namespace
+`k config set-context --current --namespace=<namespace>`
+
+### Port Forward
+- kubectl -n <namespace> port-forward svc/<service_name> <local_port>:<service_port>
+
 ## configuration
 
 ### basic config

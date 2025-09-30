@@ -161,7 +161,7 @@ generate sql:
     gunzip your_dump.sql.gz | docker exec -i your-db-container
     psql -U your-db-user -d y`ur-db-name
     ```
-
+## Check 
 
 ## Misc
 
