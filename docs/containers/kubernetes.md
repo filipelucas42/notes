@@ -12,7 +12,7 @@ Run k8s locally with `kind`
 
 ## kubectl
 
-* get current context: `kubectl conffig current-context`
+* get current context: `kubectl config current-context`
 * imperative command: `kubectl apply ...`
 * declarative command: `kubectl create ...`
 * delete job: `kubectl delete jobs <job_name>`
