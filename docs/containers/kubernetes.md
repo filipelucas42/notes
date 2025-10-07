@@ -1,6 +1,11 @@
 # kubernetes
 
 Run k8s locally with `kind`
+## Enter inside container
+`kubectl exec -it <pod-name> -- /bin/bash`
+
+## Copy files from local machine to pods
+`kubectl cp <local-file-path> <namespace>/pvc-access:/mnt/pvc`
 
 ## components
 * api server
