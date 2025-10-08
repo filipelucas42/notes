@@ -56,3 +56,45 @@ with open('json_data.json') as json_file:
 with open('json_data.json', 'w') as outfile:
     json.dump(json_string, outfile)
 ```
+## Debug
+
+### Basic navigation
+| Command      | Aliases        | What it does                                                                        |
+| ------------ | -------------- | ----------------------------------------------------------------------------------- |
+| `h`          | `help`         | General help or `help <cmd>`.                                                       |
+| `q`          | `quit`, `exit` | Quit debugger and program.                                                          |
+| `c`          | `continue`     | Run until next breakpoint or program end.                                           |
+| `n`          | `next`         | Step **over** the current line (stay in frame).                                     |
+| `s`          | `step`         | Step **into** calls.                                                                |
+| `r`          | `return`       | Run until current function returns.                                                 |
+| `unt`        | `until`        | Continue to a later line in the current frame; `until <lineno>` to a specific line. |
+| `j <lineno>` | `jump`         | Set next line to execute (no running of skipped code).                              |
+| `run`        | `restart`      | Restart the program.                                                                |
+
+### Breakpoint
+| Command                              | What it does                                 |
+| ------------------------------------ | -------------------------------------------- |
+| `b`                                  | List breakpoints.                            |
+| `b <lineno>`                         | Breakpoint at line in current file.          |
+| `b <file>:<lineno>`                  | Breakpoint in another file.                  |
+| `b <funcname>`                       | Breakpoint at function entry.                |
+| `tbreak <...>`                       | Temporary breakpoint (auto-clears when hit). |
+| `condition <bpnum> <expr>`           | Make breakpoint conditional.                 |
+| `ignore <bpnum> <count>`             | Ignore breakpoint the next N times.          |
+| `disable <bpnum>` / `enable <bpnum>` | Disable/enable a breakpoint.                 |
+| `cl`                                 | Clear **all** breakpoints.                   |
+| `cl <bpnum>`                         | Clear one breakpoint.                        |
+
+### Inspection
+| Command           | Alias   | Description                                 |
+| ----------------- | ------- | ------------------------------------------- |
+| `l`               | `list`  | Show source code around the current line.   |
+| `l <start>,<end>` | —       | List source lines in a range.               |
+| `w`               | `where` | Print stack trace (where you are).          |
+| `u`               | `up`    | Move up one stack frame.                    |
+| `d`               | `down`  | Move down one stack frame.                  |
+| `p <expr>`        | `print` | Evaluate and print expression.              |
+| `pp <expr>`       | —       | Pretty-print expression.                    |
+| `a`               | `args`  | Show arguments of the current function.     |
+| `retval`          | —       | Show the return value of the last function. |
+
