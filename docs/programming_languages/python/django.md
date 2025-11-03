@@ -5,6 +5,12 @@
 * load data: `python manage.py loaddata fixtures/fixture.json`
 * dump data: `python3 manage.py dumpdata app.Model --indent 4 > data.json`
 
+## Generate djando secret key
+```
+from django.core.management.utils import get_random_secret_key  
+get_random_secret_key()
+```
+
 ## templates
 * if statement:
 ```
