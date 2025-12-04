@@ -19,7 +19,7 @@
 
 * Grant all privileges:
   `grant all privileges on database <database_name> to <user>;`
-* In AWS RDS grant superuser status: `GRANT rds_superuser TO <user>;
+* In AWS RDS grant superuser status: `GRANT rds_superuser TO <user>`;
 
 * grant privileges to schema: `GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA schema_name TO username;`
 * Check where is hba file: `show hba_file;`
