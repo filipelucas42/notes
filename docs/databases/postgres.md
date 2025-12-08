@@ -63,7 +63,7 @@ CREATE TABLE accounts (
 );
 ```
 
-# Alter table to add on delete cascade
+## Alter table to add on delete cascade
 ```
 ALTER TABLE "Children"
 DROP CONSTRAINT "Children_parentId_fkey",
