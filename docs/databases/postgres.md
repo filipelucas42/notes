@@ -1,38 +1,55 @@
 # Postgres
 
-* install on ubuntu: `sudo apt install postgresql postgresql-contrib`
-* connect to database: `psql -d <database_name> -h <host> -U <user>`
+## Install on ubuntu
+`sudo apt install postgresql postgresql-contrib`
 
-* start postgres server: `sudo systemctl start postgres`
+## Connext to database
+`psql -d <database_name> -h <host> -U <user>`
 
-* Enter postgres prompt: `sudo -u postgres psql`
-* Enter postgres prompt in macos: `sudo -u <username> psql postgres`
+## Start porstgres server
+`sudo systemctl start postgres`
 
-* List users: `\du`
 
-* Create user: `create user newuser with password 'password';`
+## Enter postgres prompt
+`sudo -u postgres psql`
 
-* Change user password:
-  `alter user username with password 'new_password';`
+## List users
+`\du`
 
-* Create database: `create database database_name;`
+## Create user
+`create user newuser with password 'password';`
 
-* Grant all privileges:
-  `grant all privileges on database <database_name> to <user>;`
-* In AWS RDS grant superuser status: `GRANT rds_superuser TO <user>`;
+## Change user password
+`alter user username with password 'new_password';`
 
-* grant privileges to schema: `GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA schema_name TO username;`
-* Check where is hba file: `show hba_file;`
+## Create database
+`create database database_name;`
 
-* Connect to database: `\c`
+## Grant all privileges
+`grant all privileges on database <database_name> to <user>;`
 
-* List tables: `\dt`
+## In AWS RDS grant superuser status
+`GRANT rds_superuser TO <user>`
 
-* Import SQL file: `psql databasename < data_base_dump`
+## Grant privileges to schema
+`GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA schema_name TO username;`
 
-* export database: `pg_dump -U username dbname > dbexport.pgsql`
+## Check where is hba file
+`show hba_file;`
 
-* create table example:
+## Connect to database
+`\c`
+
+## List tables
+`\dt`
+
+## Import SQL file
+`psql databasename < data_base_dump`
+
+## Export database
+`pg_dump -U username dbname > dbexport.pgsql`
+
+## Create table example
 ```
 CREATE TABLE accounts (
 	id serial PRIMARY KEY,
@@ -46,7 +63,7 @@ CREATE TABLE accounts (
 );
 ```
 
-* alter table to add on delete cascade:
+# Alter table to add on delete cascade
 ```
 ALTER TABLE "Children"
 DROP CONSTRAINT "Children_parentId_fkey",
@@ -56,9 +73,13 @@ ADD CONSTRAINT "Children_parentId_fkey"
   ON DELETE CASCADE;
 ```
 
-* rename column: `alter table "user" rename column user_id to id;`
-* delete function: `DROP FUNCTION [ IF EXISTS ] function_name ( [ argument_data_type [, ...] ] );`
-* add primary key column to existing table
+## Rename column
+`alter table "user" rename column user_id to id;`
+
+## Delete function
+`DROP FUNCTION [ IF EXISTS ] function_name ( [ argument_data_type [, ...] ] );`
+
+## Add primary key column to existing table
   * modern versions of postgresql: `ALTER TABLE test1 ADD COLUMN id SERIAL PRIMARY KEY;`
   * older versions of postgresql:
 ```
@@ -68,13 +89,13 @@ ALTER TABLE test1 ALTER COLUMN id SET DEFAULT nextval('test_id_seq');
 UPDATE test1 SET id = nextval('test_id_seq');
 ```
 
-* add column to existing table:
+## Add column to existing table:
 ```
 ALTER TABLE table_name
 ADD COLUMN column_name data_type;
 ```
 
-* function for trigger example:
+## Function for trigger example:
 ```
 CREATE OR REPLACE FUNCTION function_name()
  RETURNS trigger
@@ -101,14 +122,14 @@ end $function$
 ;
 ```
 
-* create trigger:
+## Create trigger:
 ```
 CREATE TRIGGER trigger_name
 AFTER INSERT OR UPDATE ON tabel_name
 FOR EACH ROW EXECUTE FUNCTION function_name;
 ```
 
-* check triggers:
+## Check triggers:
 ``` 
 SELECT 
    p.proname as function_name, 
@@ -126,14 +147,17 @@ JOIN
 JOIN 
    pg_namespace n ON c.relnamespace = n.oid;
 ```
-## Sequence
+
+## Create sequence
 ```
 CREATE SEQUENCE schema.id_seq;
 
 ALTER TABLE schema.table 
 ALTER COLUMN column SET DEFAULT nextval('schema.id_seq');
 ```
-* restart sequence: `ALTER SEQUENCE sequence_name RESTART WITH desired_value;`
+
+## Restart sequence
+`ALTER SEQUENCE sequence_name RESTART WITH desired_value;`
 
 ## System administration
 * table `pg_catalog.pg_stat_activity` has the current queries to the database
@@ -154,16 +178,14 @@ generate sql:
     gzip > ./dump\_$(date +\`\`%Y-%m-%d\_%H\_%M\_%S'').gz
 
 ### Restore Database
+`cat your_dump.sql | docker exec -i your-db-container psql -U your-db-user -d your-db-name` 
 
-*   `cat your_dump.sql | docker exec -i your-db-container psql -U your-db-user -d your-db-name` 
-
-* restore a compressed sql:
+## restore a compressed sql:
     ```
     gunzip your_dump.sql.gz | docker exec -i your-db-container
     psql -U your-db-user -d y`ur-db-name
     ```
-## Check 
 
 ## Misc
 
-* migrate from sqlite to postgres: `pgloader sqlite://path_to_database.sqlite postgresql://username:password@localhost:5432/database_name`
+### Migrate from sqlite to postgres: `pgloader sqlite://path_to_database.sqlite postgresql://username:password@localhost:5432/database_name`
