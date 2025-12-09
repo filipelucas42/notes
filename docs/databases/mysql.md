@@ -18,7 +18,7 @@
 
 ## grant all privileges
 
-`GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'localhost' with grant option;`
+`GRANT ALL PRIVILEGES ON database_name.* TO 'username'@'%' with grant option;`
 
 ## flush privileges
 

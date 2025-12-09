@@ -188,4 +188,5 @@ generate sql:
 
 ## Misc
 
-### Migrate from sqlite to postgres: `pgloader sqlite://path_to_database.sqlite postgresql://username:password@localhost:5432/database_name`
+### Migrate from sqlite to postgres
+`pgloader sqlite://path_to_database.sqlite postgresql://username:password@localhost:5432/database_name`
