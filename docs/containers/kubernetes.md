@@ -30,7 +30,22 @@ Run k8s locally with `kind`
 `k config set-context --current --namespace=<namespace>`
 
 ### Port Forward
-- kubectl -n <namespace> port-forward svc/<service_name> <local_port>:<service_port>
+- `kubectl -n <namespace> port-forward svc/<service_name> <local_port>:<service_port>`
+
+### Restart deployment
+- `kubectl -n <namespace> rollout restart deployment/<name>`
+
+### Create secret with yaml
+```
+  apiVersion: v1
+  kind: Secret
+  metadata:
+    name: <name>
+    namespace: <namespace>
+  type: Opaque
+  stringData:
+    <secret_key>: <secret_value>
+```
 
 ## configuration
 
