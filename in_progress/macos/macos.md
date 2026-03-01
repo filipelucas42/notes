@@ -1,6 +1,8 @@
 # macos
 
-install psycopg on m1:
+* solve sudo touch id on tmux: https://github.com/fabianishere/pam_reattach
+
+## install psycopg on m1:
 ```
 brew install libpq --build-from-source
 brew install openssl

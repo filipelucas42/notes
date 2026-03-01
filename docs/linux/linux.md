@@ -307,6 +307,10 @@ turn off email output, add the following string, >/dev/null 2>&1, after the timi
 * fix mta error: `sudo apt install postfix`
     * check output message: `tail -f /var/mail/<user>`
 
+## snap
+
+* remove disabled snaps: `snap list --all | awk '/disabled/{print $1, $3}' | while read snapname snaprevision; do sudo snap remove "$snapname" --revision="$snaprevision"; done`
+
 ## misc
 
 * http benchmark: `ab -c 100 -n 10000 http://127.0.0.1:8080/api/`
