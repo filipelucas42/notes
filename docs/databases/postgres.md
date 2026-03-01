@@ -3,7 +3,7 @@
 ## Install on ubuntu
 `sudo apt install postgresql postgresql-contrib`
 
-## Connext to database
+## Connect to database from shell
 `psql -d <database_name> -h <host> -U <user>`
 
 ## Start porstgres server
@@ -37,7 +37,7 @@
 ## Check where is hba file
 `show hba_file;`
 
-## Connect to database
+## Switch database (psql prompt)
 `\c`
 
 ## List tables
@@ -180,11 +180,10 @@ generate sql:
 ### Restore Database
 `cat your_dump.sql | docker exec -i your-db-container psql -U your-db-user -d your-db-name` 
 
-## restore a compressed sql:
-    ```
-    gunzip your_dump.sql.gz | docker exec -i your-db-container
-    psql -U your-db-user -d y`ur-db-name
-    ```
+### Restore compressed sql
+```
+gunzip your_dump.sql.gz | docker exec -i your-db-container psql -U your-db-user -d your-db-name
+```
 
 ## Misc
 
