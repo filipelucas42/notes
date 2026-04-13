@@ -67,6 +67,11 @@ run `man hier` to see information about file system
 ### ln
 *   create link: `ln -s <file> <link>`
 
+### du
+* check files size: `du -d 1 -h <folder_path>` 
+  * `-d` flag represents the max level depth
+* max depth 0: `du -sh <folder_path>`
+
 ### grep
 * search word inside folder: `grep -rnw '/path/to/somewhere/' -e 'pattern'`
     * `-r` recursive
