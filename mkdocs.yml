@@ -3,3 +3,7 @@ site_url: https://example.com/
 theme:
   name: material
 use_directory_urls: false
+extra:
+  analytics:
+    provider: google
+    property: G-R71ZZWEST6
