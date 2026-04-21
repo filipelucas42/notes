@@ -34,6 +34,26 @@
 ## Grant privileges to schema
 `GRANT SELECT, INSERT, UPDATE, DELETE ON ALL TABLES IN SCHEMA schema_name TO username;`
 
+## Grant privileges to all schemas
+```
+DO $$
+DECLARE
+    s text;
+BEGIN
+    FOR s IN SELECT nspname FROM pg_namespace
+             WHERE nspname NOT IN ('pg_catalog', 'information_schema')
+               AND nspname NOT LIKE 'pg_%'
+    LOOP
+        EXECUTE format('GRANT USAGE ON SCHEMA %I TO "user"', s);
+        EXECUTE format('GRANT SELECT ON ALL TABLES IN SCHEMA %I TO "user"', s);
+        EXECUTE format('GRANT SELECT ON ALL SEQUENCES IN SCHEMA %I TO "user"', s);
+        -- Make sure future tables/sequences are also readable
+        EXECUTE format('ALTER DEFAULT PRIVILEGES IN SCHEMA %I GRANT SELECT ON TABLES TO "user"', s);
+        EXECUTE format('ALTER DEFAULT PRIVILEGES IN SCHEMA %I GRANT SELECT ON SEQUENCES TO "user"', s);
+    END LOOP;
+END$$;
+```
+
 ## Check where is hba file
 `show hba_file;`
 
