@@ -203,6 +203,9 @@ There are three categories of users:
 * Group: The group associated with the file or directory.
 * Others: Any other users not belonging to the owner or group categories.
 
+### file
+* check file extension `file -b --mime-type <file_path>`
+
 #### Symbolic Mode
 
 In symbolic mode, you can use symbolic notations to change permissions:
