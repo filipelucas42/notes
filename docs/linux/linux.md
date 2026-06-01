@@ -251,6 +251,7 @@ Examples:
     `sudo certbot --standalone certonly -d example.com --pre-hook "service nginx stop" --post-hook "service nginx start"`
 
 ## tips
+* redirect stdout to clipboard: `<command> | wl-copy`
 * print file strucuture: `find . | sed -e "s/[^-][^\/]*\//  |/g" -e "s/|\([^ ]\)/| - \1/"`
 *   check pid using port: `lsof -i :8983`
 * check path of pid: `pwdx 38555`
