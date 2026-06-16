@@ -24,6 +24,17 @@
 * use different ssh key: `GIT_SSH_COMMAND="ssh -i ~/.ssh/private_key" git <command>`
 * creat patch file: `git diff master..HEAD > code.patch`
 
+## Worktrees
+* add worktree on existing branch: `git worktree add <path> <branch>`
+* add worktree with new branch: `git worktree add -b <new-branch> <path>`
+* add worktree from remote branch: `git worktree add <path> origin/<branch>`
+* list all worktrees: `git worktree list`
+* remove worktree: `git worktree remove <path>`
+* move worktree: `git worktree move <path> <new-path>`
+* prune stale worktree metadata: `git worktree prune`
+* lock worktree (prevent accidental removal): `git worktree lock <path>`
+* unlock worktree: `git worktree unlock <path>`
+
 ## Tags
 * create tag: `git tag <tag_name>`
 * push tags: `git push --tags`
