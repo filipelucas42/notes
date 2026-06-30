@@ -47,6 +47,87 @@
 * check config value: `git config --get <config_name>`
   * example: `git config --get user.email`
 
+## Diffing branches & worktrees with Meld
+
+Meld is a visual diff/merge tool, not a git client. You wire it in as git's
+*difftool* and drive it with normal git ref syntax. Because all worktrees share
+one object database, every branch is visible from any worktree - you pick the
+branch, not the directory.
+
+> Meld needs a graphical display. Works on the desktop/laptop; won't launch on a
+> headless server or bare Termux.
+
+### One-time setup
+
+```bash
+# install
+sudo apt install meld          # Debian/Ubuntu
+brew install --cask meld       # macOS
+
+# register Meld as the difftool, stop the per-file prompt
+git config --global diff.tool meld
+git config --global difftool.prompt false
+
+# alias: dir-diff mode = open the whole changeset in one window
+git config --global alias.bdiff 'difftool -d'
+```
+
+### Daily use
+
+```bash
+# merge-base diff - only what the branch ADDED (usual choice for review)
+git bdiff master...NX-159-buyer-personas
+
+# full delta between the two branch tips
+git bdiff master NX-159-buyer-personas
+```
+
+`git bdiff` = `git difftool -d`. The `-d` (dir-diff) flag opens **all** changed
+files in a single Meld window with a file list down the side - click through
+them, no prompts, no close-and-reopen loop.
+
+#### Two-dot vs three-dot
+
+| Syntax              | Shows                                                |
+|---------------------|------------------------------------------------------|
+| `master...branch`   | Merge-base diff - only what `branch` introduced      |
+| `master branch`     | Full delta between the two tips (includes later master work, inverted) |
+
+Same meaning as plain `git diff` - difftool just wraps it.
+
+### Comparing two worktrees on disk (uncommitted state)
+
+Point Meld straight at two worktree directories to compare *live working trees*,
+including uncommitted changes:
+
+```bash
+meld ../efficio-main ../efficio-NX-159-buyer-personas
+```
+
+Caveat: this ignores `.gitignore`, so you'll see `.venv`, `__pycache__`, build
+artifacts, etc. unless you add version-control filters in Meld's preferences.
+For clean ref-based review, prefer `git bdiff`.
+
+### Gotchas
+
+- **Plain `git difftool` opens one file at a time** and prompts per file. Always
+  use `-d` (i.e. `git bdiff`) for branch-level review.
+- **Dir-diff is read-only review.** Meld shows a temp snapshot git built, not the
+  live worktree - edits in the pane don't reliably write back. For resolving
+  conflicts use `git mergetool` instead.
+- **gitk's `...` is different.** In gitk / `git log`, `master...branch` filters
+  *which commits appear in the graph*; it does not produce a combined diff. The
+  three-dot merge-base-patch meaning only applies to `git diff` / `git difftool`.
+
+### Quick reference
+
+```bash
+git bdiff master...<branch>     # what the branch added (most common)
+git bdiff master <branch>       # full tip-to-tip delta
+git difftool -d master...<branch>   # same as bdiff, explicit
+meld ../wt-a ../wt-b            # two worktrees, live on-disk state
+```
+
 ## zsh shortcuts
 | Alias                  | Command                                                                                                                         |
 | :--------------------- | :------------------------------------------------------------------------------------------------------------------------------ |
