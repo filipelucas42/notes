@@ -1,0 +1,38 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: docker
+    container:
+      image: alpine:latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_DEFAULT_REGION: us-east-1
+    steps:
+      - name: Install dependencies
+        run: |
+          apk add --no-cache git nodejs python3 py3-pip aws-cli
+          pip install --no-cache-dir --break-system-packages mkdocs mkdocs-material
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build
+        run: python3 -m mkdocs build
+
+      - name: Sync to S3
+        run: |
+          aws s3 sync ./site s3://filipelucas-notes
+          aws s3 sync ./site s3://kb.techland42.com
+
+      - name: Invalidate CloudFront cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id EJU9GM7ZEVU6P --paths '/*'
+          aws cloudfront create-invalidation --distribution-id E3D5O6ME0U6QCR --paths '/*'
