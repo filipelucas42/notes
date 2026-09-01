@@ -10,20 +10,19 @@ jobs:
   deploy:
     runs-on: docker
     container:
-      image: public.ecr.aws/y7p3h7o4/mkdocs-deploy:py3.13-mkdocs1.6.1-material9.7.7-v1
+      image: alpine:latest
     env:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
       AWS_DEFAULT_REGION: us-east-1
     steps:
-      - name: Checkout
+      - name: Install dependencies
         run: |
-          git init .
-          git -c http.extraHeader="Authorization: token ${{ github.token }}" \
-            fetch --depth 1 \
-            "${{ github.server_url }}/${{ github.repository }}.git" \
-            "${{ github.sha }}"
-          git checkout --detach FETCH_HEAD
+          apk add --no-cache git nodejs python3 py3-pip aws-cli
+          pip install --no-cache-dir --break-system-packages mkdocs mkdocs-material
+
+      - name: Checkout
+        uses: actions/checkout@v4
 
       - name: Build
         run: python3 -m mkdocs build
